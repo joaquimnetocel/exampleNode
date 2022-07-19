@@ -1,6 +1,7 @@
 # NODE EXAMPLE 📦
 
 ## DESCRIPTION
+
 THIS PROJECT IS AN EXAMPLE OF **[NODE](https://nodejs.org)**.
 
 ## BUILD USING
