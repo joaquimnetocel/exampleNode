@@ -61,8 +61,7 @@
 
 * _ESLINT_ PACKAGE (CODE ANALYSIS TOOL):
   * INSTALL _ESLINT_ EXTENSION IN VSCODE.
-  * INSTALL _ESLINT_ AS A LOCAL DEVELOPMENT DEPENDENCY:
-    * `npm install -D eslint`
+  * INSTALL PACKAGE: `npm install -D eslint`
   * CREATE _.eslintrc.json_ (CONFIGURATIONS FOR ESLINT):
     * `npm init @eslint/config` (OR `npx eslint --init`) (OR `./node_modules/.bin/eslint --init`)
       * ANSWER THE FOLLOWING QUESTIONS:
@@ -96,8 +95,7 @@
     * `"quotes": ["error", "double", { "allowTemplateLiterals": true }],`
 
 * _NODEMON_ PACKAGE (MONITOR THAT WATCHES FOR FILE CHANGES AND AUTOMATICALLY RESTARTS THE NODE APLICATTION):
-  * INSTALL _NODEMON_ PACKAGE:
-    * `npm install -D nodemon`
+  * INSTALL PACKAGE: `npm install -D nodemon`
 
 * EXAMPLE (HELLO WORLD WITH _NODEMON_):
   * `npx nodemon ./folderSource/folderExamples/exampleHelloWorld.js`
@@ -113,11 +111,30 @@
 
 * _DOTENV_ PACKAGE (ENVIRONMENT VARIABLES):
   * INSTALL _DOTENV_ EXTENSION IN VSCODE.
-  * INSTALL _DOTENV_ PACKAGE:
-    * `npm install dotenv`
+  * INSTALL PACKAGE: `npm install dotenv`
   * CREATE _.env_ FILE. THIS FILE WILL CONTAIN ENVIRONMENTAL VARIABLES AVAILABLE THROUGH `process.env.variablename`.
   * ADD `.env` AS A NEW LINE IN `.gitignore` (GOOD PRACTICE).
 
 * EXAMPLE (_DOTENV_):
   * CREATE FILE _exampleDotenv.js_ IN _folderExamples_.
   * `npx nodemon ./folderSource/folderExamples/exampleDotenv.js`
+
+* _EXPRESS_ PACKAGE:
+  * INSTALL PACKAGE: `npm install express`
+  * INSTALL TYPE DEFINITIONS: `npm install -D @types/express` (ONLY IF WORKING WITH _TYPESCRIPT_)
+
+* EXAMPLE (_EXPRESS_):
+  * CREATE _exampleExpress.js_ IN _folderExample_.
+  * `npx nodemon ./folderSource/folderExamples/exampleExpress.js`
+
+* _EJS_ PACKAGE (TEMPLATING LANGUAGE):
+  * INSTALL PACKAGE: `npm install ejs`
+
+* EXAMPLE (_EJS_):
+  * CREATE FILE _exampleEjs.js_ IN _folderExamples_.
+  * CREATE FILE _template.ejs_ IN _folderViews_.
+  * `npx nodemon ./folderSource/folderExamples/exampleEjs.js`
+
+* EXAMPLE MIDDLEWARES:
+  * CREATE _exampleMiddlewares.js_ IN _folderExamples_.
+  * `npx nodemon ./folderSource/folderExamples/exampleMiddlewares.js`
