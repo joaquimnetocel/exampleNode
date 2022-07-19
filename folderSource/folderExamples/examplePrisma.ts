@@ -16,7 +16,7 @@ constExpress.get("/", function (req, res) {
 	res.send("EXPRESS SERVER RUNNING!");
 });
 constExpress.get("/routeGetUsers", async function (req, res) {
-	const constUsers = await modulePrisma.tableUser.findMany();
+	const constUsers = await modulePrisma.tableUsers.findMany();
 	res.json(constUsers);
 });
 /////
