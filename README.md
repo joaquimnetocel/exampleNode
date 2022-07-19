@@ -139,7 +139,7 @@
   * CREATE FILE _template.ejs_ IN _folderViews_.
   * `npx nodemon ./folderSource/folderExamples/exampleEjs.js`
 
-* EXAMPLE MIDDLEWARES:
+* EXAMPLE (MIDDLEWARES):
   * CREATE _exampleMiddlewares.js_ IN _folderExamples_.
   * `npx nodemon ./folderSource/folderExamples/exampleMiddlewares.js`
 
@@ -156,6 +156,7 @@
   * INSTALL TYPE DEFINITIONS: `npm install -D @types/node`
   * CREATE tsconfig.json:
     * `npx tsc --init --allowSyntheticDefaultImports true --lib ES2021 --module ES2020 --moduleResolution node --target ES2021 --rootDir ./folderSource --outDir ./folderDist --removeComments true --resolveJsonModule true --types node`
+  * RESTART VSCODE.
   * ADD `folderDist` AS A NEW LINE IN `.gitignore`.
 
 * EXAMPLE (HELLO WORLD WITH _TYPESCRIPT_ AND _NODE_):
