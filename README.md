@@ -138,3 +138,11 @@
 * EXAMPLE MIDDLEWARES:
   * CREATE _exampleMiddlewares.js_ IN _folderExamples_.
   * `npx nodemon ./folderSource/folderExamples/exampleMiddlewares.js`
+
+* _CORS_ PACKAGE (Cross-origin Resource Sharing is a mechanism that allows restricted resources on a web page to be requested from another domain outside the domain from which the first resource was served.):
+  * INSTALL PACKAGE: `npm install cors`
+  * INSTALL TYPE DEFINITIONS: `npm install -D @types/cors` (ONLY IF WORKING WITH TYPESCRIPT)
+
+* EXAMPLE (_CORS_ MIDDLEWARE):
+  * CREATE FILE _exampleCors.js_ IN _folderExamples_.
+  * `npx nodemon ./folderSource/folderExamples/exampleCors.js`
