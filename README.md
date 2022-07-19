@@ -127,6 +127,10 @@
   * CREATE _exampleExpress.js_ IN _folderExample_.
   * `npx nodemon ./folderSource/folderExamples/exampleExpress.js`
 
+* EXAMPLE (URL PARAMETERS):
+  * CREATE _exampleUrlParameters.js_ IN _folderExample_.
+  * `npx nodemon ./folderSource/folderExamples/exampleUrlParameters.js`
+
 * _EJS_ PACKAGE (TEMPLATING LANGUAGE):
   * INSTALL PACKAGE: `npm install ejs`
 

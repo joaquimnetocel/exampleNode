@@ -1,0 +1,4 @@
+# TASK LIST
+
+* EXAMPLE OF `express.json()` MIDDLEWARE.
+* EXAMPLE OF GRAPHQL
