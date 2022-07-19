@@ -1,10 +1,19 @@
 {
+	"imports": {
+		"#pathJavascriptExamples/*": "./folderSource/folderExamples/*",
+		"#pathTypescriptExamples/*": "./folderDist/folderExamples/*",
+		"#pathModules/*": "./folderDist/folderModules/*"
+	},
 	"type": "module",
 	"name": "examplenode",
 	"version": "1.0.0",
 	"description": "EXAMPLE OF NODE PROJECT",
-	"main": "index.js",
+	"main": "./folderDist/index.js",
 	"scripts": {
+		"tsc-nodemon": "nodemon --ext ts --exec \"npx tsc --skipLibCheck && node %npm_config_jsfile%\"",
+		"prepare": "prisma db push --schema=./prisma/schema.prisma && prisma generate --schema=./prisma/schema.prisma",
+		"studio": "prisma studio --schema=./prisma/schema.prisma",
+		"dev": "cross-env dotenvDevelopmentMode=true npm run tsc-nodemon --jsfile=./folderDist/index.js\"",
 		"test": "echo \"Error: no test specified\" && exit 1"
 	},
 	"keywords": [],
@@ -16,10 +25,14 @@
 		"@typescript-eslint/eslint-plugin": "^5.30.7",
 		"@typescript-eslint/parser": "^5.30.7",
 		"eslint": "^8.20.0",
-		"nodemon": "^2.0.19"
+		"nodemon": "^2.0.19",
+		"prisma": "^4.0.0",
+		"typescript": "^4.7.4"
 	},
 	"dependencies": {
+		"@prisma/client": "^4.0.0",
 		"cors": "^2.8.5",
+		"cross-env": "^7.0.3",
 		"dotenv": "^16.0.1",
 		"ejs": "^3.1.8",
 		"express": "^4.18.1"
