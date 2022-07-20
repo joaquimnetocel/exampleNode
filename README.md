@@ -39,7 +39,7 @@ git clone https://github.com/joaquimnetocel/exampleNode.git
 
 * OR YOU CAN DOWNLOAD THE REPOSITORY [HERE](https://github.com/joaquimnetocel/exampleNode/archive/refs/heads/master.zip).
 
-* OR YOU CAN BUILD THIS PROJECT FROM ZERO [HERE](./folderMarkdown/fileProjectCreation.md).
+* OR YOU CAN BUILD THIS PROJECT FROM ZERO (FOLLOW THE INSTRUCTIONS [HERE](./folderMarkdown/fileProjectCreation.md)).
 
 ## DATABASE CONFIGURATIONS
 
