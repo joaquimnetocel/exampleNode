@@ -27,7 +27,7 @@ THIS PROJECT IS AN EXAMPLE OF **[NODE](https://nodejs.org)**.
 
 * [SYNCHRONIZE _VSCODE_ WITH _GITHUB_](./folderMarkdown/fileSynchronizeVscodeWithGithub.md) (OPTIONAL).
 
-* [INSTALL _NODE_ AND _NODE PACKAGE MANAGER_ (_NPM_)](./folderMarkdown/fileInstallNodeAndNpm.md) (OPTIONAL).
+* [INSTALL _NODE_ AND _NODE PACKAGE MANAGER_ (_NPM_)](./folderMarkdown/fileInstallNodeAndNpm.md) (REQUIRED).
 
 ## DOWNLOAD
 
