@@ -41,7 +41,7 @@ git clone https://github.com/joaquimnetocel/exampleNode.git
 
 * OR YOU CAN BUILD THIS PROJECT FROM ZERO (FOLLOW THE INSTRUCTIONS [HERE](./folderMarkdown/fileProjectCreation.md)).
 
-## DATABASE CONFIGURATIONS
+## CONFIGURE DATABASE CONNECTION
 
 * EDIT THE _DATABASE_URL_ VARIABLE IN _.env_ FILE TO FIT YOUR DATABASE.
 * IF YOU ARE NOT USING MYSQL, CHANGE THE PROVIDER IN _prisma/schema.prisma_ FILE .
