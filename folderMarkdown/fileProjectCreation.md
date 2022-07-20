@@ -176,7 +176,7 @@
   * CREATE _examplePathAlias.ts_ IN _folderExamples_.
   * `npm run tsc-nodemon --jsfile=./folderDist/folderExamples/examplePathAlias.js`
 
-* _PRISMA_:
+* _PRISMA_ (ORM):
   * INSTALL _PRISMA_ EXTENSION IN VSCODE.
   * INSTALL PACKAGE: `npm install -D prisma`
   * INSTALL _PRISMA_ CLIENT_: `npm install @prisma/client`
@@ -197,6 +197,19 @@
 * EXAMPLE (_PRISMA_):
   * CREATE FILE _examplePrisma.ts_ IN FOLDER _folderExamples_.
   * `npm run tsc-nodemon --jsfile=./folderDist/folderExamples/examplePrisma.js`
+
+* _GRAPHQL_ (QUERY LANGUAGE AND RUNTIME FOR APIs):
+  * INSTALL PACKAGES:
+    * `npm install express-graphql`
+    * `npm install graphql-modules`
+
+* _GRAPHQL PLAYGROUND_ (GRAPHICAL, INTERACTIVE, IN-BROWSER _GRAPHQL_ IDE):
+  * INSTALL PACKAGE: `npm install graphql-playground-html`
+
+* EXAMPLE (_GRAPHQL_ WITH _GRAPHQL PLAYGROUND_):
+  * CREATE FOLDER _folderGraphql_ IN _folderExamples_.
+  * CREATE ALL FILES IN _folderGraphql_.
+  * `npm run tsc-nodemon --jsfile=./folderDist/folderExamples/folderGraphql/exampleGraphql.js`
 
 ## PROJECT MAIN CODE
 
