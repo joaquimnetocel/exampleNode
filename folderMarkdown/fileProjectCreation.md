@@ -98,6 +98,7 @@
 * EXAMPLE (_EXPRESS_):
   * CREATE _exampleExpress.js_ IN _folderExample_.
   * `npx nodemon ./folderSource/folderExamples/exampleExpress.js`
+![REQUEST AND RESPONSE IMAGE](./fileRequestAndResponseImage.png)
 
 * EXAMPLE (URL PARAMETERS):
   * CREATE _exampleUrlParameters.js_ IN _folderExample_.
