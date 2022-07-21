@@ -16,6 +16,7 @@
 
 * EXAMPLE (HELLO WORLD WITH _NODE_):
   * CREATE [_exampleHelloWorld.js_](../folderSource/folderExamples/exampleHelloWorld.js) IN _folderExamples_.
+  * RUN DE EXAMPLE:
   
   ```bash
   node ./folderSource/folderExamples/exampleHelloWorld.js
