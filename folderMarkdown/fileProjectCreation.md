@@ -1,13 +1,13 @@
 # PROJECT CREATION
 
-## PREREQUISITE
+## PREREQUISITES
 
 * CONFIGURE EXECUTION POLICY:
-  * RUN _VSCODE_ AS ADMINISTRATOR AND RUN THE FOLLOWING COMMAND IN TERMINAL:
+  * OPEN _VSCODE_ AS ADMINISTRATOR AND RUN THE FOLLOWING COMMAND IN TERMINAL:
 
-```bash
-Set-ExecutionPolicy RemoteSigned
-```
+    ```bash
+    Set-ExecutionPolicy RemoteSigned
+    ```  
 
 ## INSTRUCTIONS
 
@@ -19,11 +19,12 @@ Set-ExecutionPolicy RemoteSigned
 
 * EXAMPLE (HELLO WORLD WITH _NODE_):
   * CREATE [_exampleHelloWorld.js_](../folderSource/folderExamples/exampleHelloWorld.js) IN _folderExamples_.
-  
-  ```bash
-  # RUN DE EXAMPLE:
-  node ./folderSource/folderExamples/exampleHelloWorld.js
-  ```
+  * RUN THE EXAMPLE:
+
+    ```bash
+    # RUN THE EXAMPLE:
+    node ./folderSource/folderExamples/exampleHelloWorld.js
+    ```
 
 * _PRETTIER_ (CODE FORMATTER):
   * INSTALL _PRETTIER_ EXTENSION IN _VSCODE_.
@@ -34,95 +35,159 @@ Set-ExecutionPolicy RemoteSigned
 
 * INITIALIZE THE NODE PACKAGE MANAGER (NPM):
 
-```bash
-# THIS IS GOING TO CREATE THE FILE package.json.
-npm init -y
-```
+  ```bash
+  npm init -y # THIS IS GOING TO CREATE THE FILE package.json.
+  ```
 
 * ENABLE ES6 IMPORTS/EXPORTS BY ADDING THE FOLLOWING LINE TO [_package.json_](../package.json):
 
-```json
-"type": "module",
-```
+  ```json
+  "type": "module",
+  ```
 
 * _ESLINT_ PACKAGE (CODE ANALYSIS TOOL):
   * INSTALL _ESLINT_ EXTENSION IN VSCODE.
-  * INSTALL PACKAGE: `npm install -D eslint`
-  * CREATE _.eslintrc.json_ (CONFIGURATIONS FOR ESLINT):
-    * `npm init @eslint/config` (OR `npx eslint --init`) (OR `./node_modules/.bin/eslint --init`)
-      * ANSWER THE FOLLOWING QUESTIONS:
-        * How would you like to use ESLint?
-              - To check syntax, find problems, and enforce code style
-        * What type of modules does your project use?
-              - JavaScript modules (import/export)
-        * Which framework does your project use?
-              - None of these
-        * Does your project use TypeScript?
-              - Yes
-        * Where does your code run?
-              - Node
-        * How would you like to define a style for your project?
-              - Answer questions about your style
-        * What format do you want your config file to be in?
-              - JSON
-        * What style of indentation do you use?
-              - Tabs
-        * What quotes do you use for strings?
-              - Double
-        * What line endings do you use?
-              - Windows
-        * Do you require semicolons?
-              - Yes
-        * @typescript-eslint/eslint-plugin@latest @typescript-eslint/parser@latest Would you like to install them now with npm?
-              - Yes
-  * ADD THE FOLLOWING LINE TO THE RULES PROPERTY IN _.eslintrc.json_ TO REQUIRE _comma-dangle_:
-    * `"comma-dangle": [1, "always-multiline"],`
-  * REPLACE THE _quotes_ PROPERTY IN _.eslintrc.json_ TO ENABLE TEMPLATE LITERALS:
-    * `"quotes": ["error", "double", { "allowTemplateLiterals": true }],`
+  * INSTALL THE PACKAGE:
+
+    ```bash
+    npm install -D eslint
+    ```
+
+  * CONFIGURE ESLINT:
+
+    ```bash
+    npm init @eslint/config # THIS IS GOING TO CREATE .eslintrc.json
+    #npx eslint --init (alternative)
+    ```
+
+    * ANSWER THE FOLLOWING QUESTIONS:
+      * How would you like to use ESLint?
+            - To check syntax, find problems, and enforce code style
+      * What type of modules does your project use?
+            - JavaScript modules (import/export)
+      * Which framework does your project use?
+            - None of these
+      * Does your project use TypeScript?
+            - Yes
+      * Where does your code run?
+            - Node
+      * How would you like to define a style for your project?
+            - Answer questions about your style
+      * What format do you want your config file to be in?
+            - JSON
+      * What style of indentation do you use?
+            - Tabs
+      * What quotes do you use for strings?
+            - Double
+      * What line endings do you use?
+            - Windows
+      * Do you require semicolons?
+            - Yes
+      * @typescript-eslint/eslint-plugin@latest @typescript-eslint/parser@latest Would you like to install them now with npm?
+            - Yes
+  * ADD THE FOLLOWING LINE TO THE RULES PROPERTY IN [_.eslintrc.json_](../.eslintrc.json) TO REQUIRE _comma-dangle_:
+
+    ```json
+    "comma-dangle": [1, "always-multiline"],
+    ```
+
+  * REPLACE THE _quotes_ PROPERTY IN [_.eslintrc.json_](../.eslintrc.json) TO ENABLE TEMPLATE LITERALS:
+
+    ```json
+    "quotes": ["error", "double", { "allowTemplateLiterals": true }],
+    ```
 
 * _NODEMON_ PACKAGE (MONITOR THAT WATCHES FOR FILE CHANGES AND AUTOMATICALLY RESTARTS THE NODE APLICATTION):
-  * INSTALL PACKAGE: `npm install -D nodemon`
+  * INSTALL THE PACKAGE:
+
+    ```bash
+    npm install -D nodemon`
+    ```
 
 * EXAMPLE (HELLO WORLD WITH _NODEMON_):
-  * `npx nodemon ./folderSource/folderExamples/exampleHelloWorld.js`
+  * RUN THE EXAMPLE:
+
+    ```bash
+    npx nodemon ./folderSource/folderExamples/exampleHelloWorld.js
+    ```
 
 * _GIT_:
-  * `git init`
-  * CREATE _.gitignore_ FILE. THIS FILE WILL CONTAIN A LIST OF ALL FILES AND FOLDERS IGNORED BY _GIT/GITHUB_.
-  * ADD `node_modules` AS A NEW LINE IN _.gitignore_.
+  * INITIALIZE GIT REPOSITORY
+
+    ```bash
+    git init
+    ```
+
+  * CREATE [_.gitignore_](../.gitignore) FILE. THIS FILE WILL CONTAIN A LIST OF ALL FILES AND FOLDERS IGNORED BY _GIT/GITHUB_.
+  * ADD `node_modules` AS A NEW LINE IN [_.gitignore_](../.gitignore).
 
 * EXAMPLE (_TEMPLATE STRINGS_ WITH _NODEMON_):
-  * CREATE _exampleTemplateStrings.js_ IN _folderExamples_.
-  * `npx nodemon ./folderSource/folderExamples/exampleTemplateStrings.js`
+  * CREATE [_exampleTemplateStrings.js_](../folderSource/folderExamples/exampleTemplateStrings.js) IN _folderExamples_.
+  * RUN THE EXAMPLE:
+
+    ```bash
+    npx nodemon ./folderSource/folderExamples/exampleTemplateStrings.js
+    ```
 
 * _DOTENV_ PACKAGE (ENVIRONMENT VARIABLES):
   * INSTALL _DOTENV_ EXTENSION IN VSCODE.
-  * INSTALL PACKAGE: `npm install dotenv`
-  * CREATE _.env_ FILE. THIS FILE WILL CONTAIN ENVIRONMENTAL VARIABLES AVAILABLE THROUGH `process.env.variablename`.
-  * ADD `.env` AS A NEW LINE IN `.gitignore` (GOOD PRACTICE).
+  * INSTALL THE PACKAGE:
+
+    ```bash
+    npm install dotenv
+    ```
+
+  * CREATE [_.env_](../.env) FILE. THIS FILE WILL CONTAIN ENVIRONMENTAL VARIABLES AVAILABLE THROUGH `process.env.variablename`.
+  * ADD _.env_ AS A NEW LINE IN [_.gitignore_](../.gitignore) (GOOD PRACTICE).
 
 * EXAMPLE (_DOTENV_):
-  * CREATE FILE _exampleDotenv.js_ IN _folderExamples_.
-  * `npx nodemon ./folderSource/folderExamples/exampleDotenv.js`
+  * CREATE FILE [_exampleDotenv.js_](../folderSource/folderExamples/exampleDotenv.js) IN _folderExamples_.
+  * RUN THE EXAMPLE:
+
+    ```bash
+    npx nodemon ./folderSource/folderExamples/exampleDotenv.js
+    ```
 
 * _EXPRESS_ PACKAGE (WEB APPLICATION FRAMEWORK FOR _NODE_):
-  * INSTALL PACKAGE: `npm install express`
-  * INSTALL TYPE DEFINITIONS: `npm install -D @types/express` (ONLY IF WORKING WITH _TYPESCRIPT_)
+  * INSTALL THE PACKAGE:
+  
+    ```bash
+    npm install express
+    ```
+
+  * INSTALL TYPE DEFINITIONS:
+  
+    ```bash
+    npm install -D @types/express # ONLY IF WORKING WITH TYPESCRIPT
+    ```
 
 * EXAMPLE (_EXPRESS_):
-  * CREATE _exampleExpress.js_ IN _folderExample_.
-  * `npx nodemon ./folderSource/folderExamples/exampleExpress.js`
-![REQUEST AND RESPONSE IMAGE](./fileRequestAndResponseImage.png)
+  * CREATE [_exampleExpress.js_](../folderSource/folderExamples/exampleExpress.js) IN _folderExample_.
+  * RUN THE EXAMPLE:
+  
+    ```bash
+    npx nodemon ./folderSource/folderExamples/exampleExpress.js
+    ```
+
+    ![REQUEST AND RESPONSE IMAGE](./fileRequestAndResponseImage.png)
 
 * EXAMPLE (URL PARAMETERS):
-  * CREATE _exampleUrlParameters.js_ IN _folderExample_.
-  * `npx nodemon ./folderSource/folderExamples/exampleUrlParameters.js`
+  * CREATE [_exampleUrlParameters.js_](../folderSource/folderExamples/exampleUrlParameters.js) IN _folderExample_.
+  * RUN THE EXAMPLE:
+  
+    ```bash
+    npx nodemon ./folderSource/folderExamples/exampleUrlParameters.js
+    ```
 
 * EXAMPLE (POST, PUT, DELETE AND JSON BODY PARSER):
   * INSTALL THE VSCODE EXTENSION "REST Client" TO SIMULATE POST, PUT AND DELETE REQUESTS.
   * CREATE FOLDER _folderJsonBodyParser_ IN _folderExamples_.
-  * CREATE ALL FILES IN _folderJsonBodyParser_.
-  * `npx nodemon ./folderSource/folderExamples/folderJsonBodyParser/exampleJsonBodyParser.js`
+  * CREATE ALL FILES IN [_folderJsonBodyParser_](../folderSource/folderExamples/folderJsonBodyParser/).
+  * RUN THE EXAMPLE:
+  
+    ```bash
+    npx nodemon ./folderSource/folderExamples/folderJsonBodyParser/exampleJsonBodyParser.js
+    ```
 
 * _EJS_ PACKAGE (TEMPLATING LANGUAGE):
   * INSTALL PACKAGE: `npm install ejs`
