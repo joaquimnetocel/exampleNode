@@ -16,17 +16,20 @@
 
 * EXAMPLE (HELLO WORLD WITH _NODE_):
   * CREATE [_exampleHelloWorld.js_](../folderSource/folderExamples/exampleHelloWorld.js) IN _folderExamples_.
-  * `node ./folderSource/folderExamples/exampleHelloWorld.js`
+  
+  ```bash
+  node ./folderSource/folderExamples/exampleHelloWorld.js
+  ```
 
 * _PRETTIER_ (CODE FORMATTER):
   * INSTALL _PRETTIER_ EXTENSION IN _VSCODE_.
   * CREATE [_.prettierrc_](../.prettierrc) FILE. THIS FILE WILL CONTAIN _PRETTIER_ CONFIGURATIONS.
-  * CREATE _.prettierignore_ FILE. THIS FILE WILL CONTAIN A LIST OF FILE TYPES IGNORED BY _PRETTIER_.
+  * CREATE [_.prettierignore_](../.prettierignore) FILE. THIS FILE WILL CONTAIN A LIST OF FILE TYPES IGNORED BY _PRETTIER_.
 
 * CREATE README.md
 
 * INITIALIZE THE NODE PACKAGE MANAGER (NPM):
-  * `npm init -y` (THIS IS GOING TO CREATE THE FILE _package.json_)
+  * `npm init -y` (THIS IS GOING TO CREATE THE FILE [_package.json_](../package.json))
 
 * ENABLE ES6 IMPORTS/EXPORTS BY ADDING THE FOLLOWING LINE TO _package.json_:
   * `"type": "module",`
