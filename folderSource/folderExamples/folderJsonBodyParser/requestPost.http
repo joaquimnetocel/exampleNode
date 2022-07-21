@@ -1,0 +1,7 @@
+POST http://localhost:8081/routePost
+content-type: application/json
+
+{
+    "name": "John",
+    "age": 20
+}

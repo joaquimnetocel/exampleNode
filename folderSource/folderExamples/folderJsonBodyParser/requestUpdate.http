@@ -1,0 +1,7 @@
+PUT http://localhost:8081
+content-type: application/json
+
+{
+	"name": "Mary",
+	"age": 30
+}

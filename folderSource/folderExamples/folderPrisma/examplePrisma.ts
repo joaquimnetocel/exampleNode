@@ -11,7 +11,7 @@ import { modulePrisma } from "#pathModules/modulePrisma.js";
 const constExpress = express();
 /////
 
-// NPM MIDDLEWARES
+// MIDDLEWARE THAT PARSES JSON HTTP REQUEST BODIES INTO JAVASCRIPT OBJECTS. THIS MIDDLEWARE ADDS A BODY PROPERTY TO THE EXPRESS REQUEST "req". TO ACCESS THE PARSED REQUEST BODY, USE "req.body".
 constExpress.use(express.json());
 /////
 

@@ -103,6 +103,12 @@
   * CREATE _exampleUrlParameters.js_ IN _folderExample_.
   * `npx nodemon ./folderSource/folderExamples/exampleUrlParameters.js`
 
+* EXAMPLE (POST, PUT, DELETE AND JSON BODY PARSER):
+  * INSTALL THE VSCODE EXTENSION "REST Client" TO SIMULATE POST, PUT AND DELETE REQUESTS.
+  * CREATE FOLDER _folderJsonBodyParser_ IN _folderExamples_.
+  * CREATE ALL FILES IN _folderJsonBodyParser_.
+  * `npx nodemon ./folderSource/folderExamples/folderJsonBodyParser/exampleJsonBodyParser.js`
+
 * _EJS_ PACKAGE (TEMPLATING LANGUAGE):
   * INSTALL PACKAGE: `npm install ejs`
 

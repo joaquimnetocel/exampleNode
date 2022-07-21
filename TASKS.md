@@ -1,4 +1,4 @@
 # TASK LIST
 
-* EXAMPLE OF `express.json()` MIDDLEWARE.
-* IMPROVE EXAMPLE OF GRAPHQL WITH CRUD AND PARENTS
+* IMPROVE EXAMPLE OF GRAPHQL WITH CRUD AND PARENTS.
+* app.use(express.urlencoded({ extended: true})) "https://stackoverflow.com/questions/23259168/what-are-express-json-and-express-urlencoded"
