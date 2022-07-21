@@ -22,7 +22,6 @@
   * RUN THE EXAMPLE:
 
     ```bash
-    # RUN THE EXAMPLE:
     node ./folderSource/folderExamples/exampleHelloWorld.js
     ```
 
@@ -33,7 +32,7 @@
 
 * CREATE README.md
 
-* INITIALIZE THE NODE PACKAGE MANAGER (NPM):
+* INITIALIZE THE _NODE PACKAGE MANAGER_ (_NPM_):
 
   ```bash
   npm init -y # THIS IS GOING TO CREATE THE FILE package.json.
