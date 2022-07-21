@@ -15,7 +15,7 @@
   * CREATE FOLDER _folderViews_ IN _folderSource_.
 
 * EXAMPLE (HELLO WORLD WITH _NODE_):
-  * CREATE _exampleHelloWorld.js_ IN _folderExamples_.
+  * CREATE [_exampleHelloWorld.js_](../folderSource/folderExamples/exampleHelloWorld.js) IN _folderExamples_.
   * `node ./folderSource/folderExamples/exampleHelloWorld.js`
 
 * _PRETTIER_ (CODE FORMATTER):
