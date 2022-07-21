@@ -4,7 +4,10 @@
 
 * CONFIGURE EXECUTION POLICY:
   * RUN _VSCODE_ AS ADMINISTRATOR AND RUN THE FOLLOWING COMMAND IN TERMINAL:
-    * `Set-ExecutionPolicy RemoteSigned`
+
+```bash
+Set-ExecutionPolicy RemoteSigned
+```
 
 ## INSTRUCTIONS
 
