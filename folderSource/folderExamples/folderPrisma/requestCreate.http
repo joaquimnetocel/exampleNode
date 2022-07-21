@@ -1,0 +1,7 @@
+POST http://localhost:8081/routeCreateUser
+content-type: application/json
+
+{
+    "fieldEmail": "john@provider.com",
+    "fieldName": "John"
+}

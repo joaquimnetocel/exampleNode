@@ -195,8 +195,10 @@
   * CREATE FILE _modulePrisma.ts_ IN FOLDER _folderModules_.
 
 * EXAMPLE (_PRISMA_):
-  * CREATE FILE _examplePrisma.ts_ IN FOLDER _folderExamples_.
-  * `npm run tsc-nodemon --jsfile=./folderDist/folderExamples/examplePrisma.js`
+  * INSTALL THE VSCODE EXTENSION "REST Client" TO SIMULATE POST, PUT AND DELETE REQUESTS.
+  * CREATE FOLDER _folderPrisma_ IN FOLDER _folderExamples_.
+  * CREATE ALL FILES IN _folderPrisma_.
+  * `npm run tsc-nodemon --jsfile=./folderDist/folderExamples/folderPrisma/examplePrisma.js`
 
 * _GRAPHQL_ (QUERY LANGUAGE AND RUNTIME FOR APIs):
   * INSTALL PACKAGES:

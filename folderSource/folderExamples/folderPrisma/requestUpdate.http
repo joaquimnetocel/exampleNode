@@ -1,0 +1,7 @@
+PUT http://localhost:8081/routeUpdateUser/1
+content-type: application/json
+
+{
+	"fieldName": "Mary",
+	"fieldAge": 20
+}

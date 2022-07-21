@@ -11,7 +11,8 @@ datasource db {
 }
 
 model tableUsers {
-    fieldUserId Int     @id @default(autoincrement())
-    fieldEmail  String  @unique
-    fieldName   String?
+    fieldUserId Int    @id @default(autoincrement())
+    fieldEmail  String @unique
+    fieldName   String
+    fieldAge    Int?
 }
