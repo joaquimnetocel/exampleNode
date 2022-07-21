@@ -155,10 +155,10 @@
     npm install express
     ```
 
-  * INSTALL TYPE DEFINITIONS:
+  * INSTALL TYPE DEFINITIONS (ONLY IF WORKING WITH TYPESCRIPT):
   
     ```bash
-    npm install -D @types/express # ONLY IF WORKING WITH TYPESCRIPT
+    npm install -D @types/express
     ```
 
 * EXAMPLE (_EXPRESS_):
@@ -182,7 +182,7 @@
 * EXAMPLE (POST, PUT, DELETE AND JSON BODY PARSER):
   * INSTALL THE VSCODE EXTENSION "REST Client" TO SIMULATE POST, PUT AND DELETE REQUESTS.
   * CREATE FOLDER _folderJsonBodyParser_ IN _folderExamples_.
-  * CREATE ALL FILES IN [_folderJsonBodyParser_](../folderSource/folderExamples/folderJsonBodyParser/).
+  * CREATE ALL FILES IN _folderJsonBodyParser_.
   * RUN THE EXAMPLE:
   
     ```bash
@@ -190,120 +190,235 @@
     ```
 
 * _EJS_ PACKAGE (TEMPLATING LANGUAGE):
-  * INSTALL PACKAGE: `npm install ejs`
+  * INSTALL THE PACKAGE:
+  
+    ```bash
+    npm install ejs
+    ```
 
 * EXAMPLE (_EJS_):
-  * CREATE FILE _exampleEjs.js_ IN _folderExamples_.
-  * CREATE FILE _template.ejs_ IN _folderViews_.
-  * `npx nodemon ./folderSource/folderExamples/exampleEjs.js`
+  * CREATE FILE [_exampleEjs.js_](../folderSource/folderExamples/exampleEjs.js) IN _folderExamples_.
+  * CREATE FILE [_template.ejs_](../folderSource/folderViews/template.ejs) IN _folderViews_.
+  * RUN THE EXAMPLE:
+
+    ```bash
+    npx nodemon ./folderSource/folderExamples/exampleEjs.js
+    ```
 
 * EXAMPLE (MIDDLEWARES):
-  * CREATE _exampleMiddlewares.js_ IN _folderExamples_.
-  * `npx nodemon ./folderSource/folderExamples/exampleMiddlewares.js`
+  * CREATE [_exampleMiddlewares.js_](../folderSource/folderExamples/exampleMiddlewares.js) IN _folderExamples_.
+  * RUN THE EXAMPLE:
+  
+    ```bash
+    npx nodemon ./folderSource/folderExamples/exampleMiddlewares.js
+    ```
 
-* _CORS_ PACKAGE (Cross-origin Resource Sharing is a mechanism that allows restricted resources on a web page to be requested from another domain outside the domain from which the first resource was served.):
-  * INSTALL PACKAGE: `npm install cors`
-  * INSTALL TYPE DEFINITIONS: `npm install -D @types/cors` (ONLY IF WORKING WITH _TYPESCRIPT_)
+* _CORS_ PACKAGE (CROSS-ORIGIN RESOURCE SHARING IS A MECHANISM THAT ALLOWS RESTRICTED RESOURCES ON A WEB PAGE TO BE REQUESTED FROM ANOTHER DOMAIN OUTSIDE THE DOMAIN FROM WHICH THE FIRST RESOURCE WAS SERVED):
+  * INSTALL THE PACKAGE:
+  
+    ```bash
+    npm install cors
+    ```
+
+  * INSTALL TYPE DEFINITIONS (ONLY IF WORKING WITH TYPESCRIPT):
+  
+    ```bash
+    npm install -D @types/cors
+    ```
 
 * EXAMPLE (_CORS_ MIDDLEWARE):
-  * CREATE FILE _exampleCors.js_ IN _folderExamples_.
-  * `npx nodemon ./folderSource/folderExamples/exampleCors.js`
+  * CREATE FILE [_exampleCors.js_](../folderSource/folderExamples/exampleCors.js) IN _folderExamples_.
+  * RUN THE EXAMPLE:
+  
+    ```bash
+    npx nodemon ./folderSource/folderExamples/exampleCors.js
+    ```
 
 * _TYPESCRIPT_:
-  * INSTALL PACKAGE: `npm install -D typescript`
-  * INSTALL TYPE DEFINITIONS: `npm install -D @types/node`
-  * CREATE tsconfig.json:
-    * `npx tsc --init --allowSyntheticDefaultImports true --lib ES2021 --module ES2020 --moduleResolution node --target ES2021 --rootDir ./folderSource --outDir ./folderDist --removeComments true --resolveJsonModule true --types node`
+  * INSTALL THE PACKAGE:
+  
+    ```bash
+    npm install -D typescript
+    ```
+
+  * INSTALL TYPE DEFINITIONS:
+  
+    ```bash
+    npm install -D @types/node
+    ```
+
+  * CREATE [_tsconfig.json_](../tsconfig.json):
+
+    ```bash
+    npx tsc --init --allowSyntheticDefaultImports true --lib ES2021 --module ES2020 --moduleResolution node --target ES2021 --rootDir ./folderSource --outDir ./folderDist --removeComments true --resolveJsonModule true --types node
+    ```
+
   * RESTART VSCODE.
-  * ADD `folderDist` AS A NEW LINE IN `.gitignore`.
+  * ADD _folderDist_ AS A NEW LINE IN [_.gitignore_](../.gitignore).
 
 * EXAMPLE (HELLO WORLD WITH _TYPESCRIPT_ AND _NODE_):
-  * CREATE _exampleHelloWorld.ts_ IN _folderExamples_.
-  * `npx tsc` (TRANSPILE ALL _.ts_ FILES IN _folderSource_ TO _.js_ FILES IN _folderDist_)
-  * `node ./folderDist/folderExamples/exampleHelloWorld.js`
+  * CREATE [_exampleHelloWorld.ts_](../folderSource/folderExamples/exampleHelloWorld.ts) IN _folderExamples_.
+  * RUN THE EXAMPLE:
+  
+    ```bash
+    npx tsc # TRANSPILE ALL _.ts_ FILES IN _folderSource_ TO _.js_ FILES IN _folderDist_
+    node ./folderDist/folderExamples/exampleHelloWorld.js
+    ```
 
 * CREATE A COMMAND TO RUN _TYPESCRIPT_ WITH _NODEMON_:
   * CREATE COMMAND `npm run tsc-nodemon` BY ADDING THE FOLLOWING LINES TO THE _script_ ENTRY IN _package.json_:
-    * `"tsc-nodemon": "nodemon --ext ts --exec \"npx tsc --skipLibCheck && node %npm_config_jsfile%\"",`
+
+    ```json
+    "tsc-nodemon": "nodemon --ext ts --exec \"npx tsc --skipLibCheck && node %npm_config_jsfile%\"",
+    ```
 
 * EXAMPLE (HELLO WORLD WITH _TYPESCRIPT_ AND _NODEMON_):
-  * `npm run tsc-nodemon --jsfile=./folderDist/folderExamples/exampleHelloWorld.js`
+  * RUN THE EXAMPLE:
+
+    ```bash
+    npm run tsc-nodemon --jsfile=./folderDist/folderExamples/exampleHelloWorld.js
+    ```
 
 * PATH ALIAS CONFIGURATION:
-  * ADD THE FOLLOWING PROPERTY TO package.json AND tsconfig.json (ONLY IF WORKING WITH TYPESCRIPT):
+  * ADD THE FOLLOWING PROPERTY TO [_package.json_](../package.json):
 
-// IN package.json:
+    ```json
+    "imports":{
+        "#pathJavascriptExamples/*": "./folderSource/folderExamples/*",
+        "#pathTypescriptExamples/*": "./folderDist/folderExamples/*",
+        "#pathModules/*": "./folderDist/folderModules/*"
+    },
+    ```
 
-```json
-"imports":{
-  "#pathJavascriptExamples/*": "./folderSource/folderExamples/*",
-  "#pathTypescriptExamples/*": "./folderDist/folderExamples/*",
-  "#pathModules/*": "./folderDist/folderModules/*"
-},
-```
+  * ADD THE FOLLOWING PROPERTY IN _compilerOptions_ OF [_tsconfig.json_](../tsconfig.json) (ONLY IF WORKING WITH TYPESCRIPT):
 
-// IN compilerOptions OF _tsconfig.json_:
-
-```json
-"paths": {
-  "#pathJavascriptExamples/*": ["./folderSource/folderExamples/*"],
-  "#pathTypescriptExamples/*": ["./folderDist/folderExamples/*", "./folderSource/folderExamples/*"],
-  "#pathModules/*": ["./folderDist/folderModules/*", "./folderSource/folderModules/*"]
-},
-```
+    ```json
+    "paths": {
+        "#pathJavascriptExamples/*": ["./folderSource/folderExamples/*"],
+        "#pathTypescriptExamples/*": ["./folderDist/folderExamples/*", "./folderSource/folderExamples/*"],
+        "#pathModules/*": ["./folderDist/folderModules/*", "./folderSource/folderModules/*"]
+    },
+    ```
 
 * EXAMPLE (PATH ALIAS WITH _JAVASCRIPT_):
-  * CREATE _functionSum.js_ IN _folderExamples_.
-  * CREATE _examplePathAlias.js_ IN _folderExamples_.
-  * `npx nodemon ./folderSource/folderExamples/examplePathAlias.js`
+  * CREATE [_functionSum.js_](../folderSource/folderExamples/functionSum.js) IN _folderExamples_.
+  * CREATE [_examplePathAlias.js_](../folderSource/folderExamples/examplePathAlias.js) IN _folderExamples_.
+  * RUN THE EXAMPLE:
+  
+    ```bash
+    npx nodemon ./folderSource/folderExamples/examplePathAlias.js
+    ```
 
-* PATH ALIAS EXAMPLE WITH _TYPESCRIPT_:
-  * CREATE _functionSubtraction.ts_ IN _folderExamples_.
-  * CREATE _examplePathAlias.ts_ IN _folderExamples_.
-  * `npm run tsc-nodemon --jsfile=./folderDist/folderExamples/examplePathAlias.js`
+* EXAMPLE (PATH ALIAS WITH _TYPESCRIPT_):
+  * CREATE [_functionSubtraction.ts_](../folderSource/folderExamples/functionSubtraction.ts) IN _folderExamples_.
+  * CREATE [_examplePathAlias.ts_](../folderSource/folderExamples/examplePathAlias.ts) IN _folderExamples_.
+  * RUN THE EXAMPLE
+  
+    ```bash
+    npm run tsc-nodemon --jsfile=./folderDist/folderExamples/examplePathAlias.js
+    ```
 
 * _PRISMA_ (ORM):
   * INSTALL _PRISMA_ EXTENSION IN VSCODE.
-  * INSTALL PACKAGE: `npm install -D prisma`
-  * INSTALL _PRISMA_ CLIENT_: `npm install @prisma/client`
+  * INSTALL THE PACKAGE:
+  
+    ```bash
+    npm install -D prisma
+    ```
+  
+  * INSTALL _PRISMA_ CLIENT_:
+  
+    ```bash
+    npm install @prisma/client
+    ```
+
   * INITIALIZE _PRISMA_:
-    * `npx prisma init --url mysql://root:@localhost:3306/databaseProject` (IF YOUR MYSQL PASSWORD IS EMPTY)
-    * `npx prisma init --url mysql://root:password@localhost:3306/databaseProject` (IF YOUR MYSQL PASSWORD IS "password")
-  * THE PREVIOUS STEP CREATES THE FILE _schema.prisma_ IN _prisma_ FOLDER AND MODIFY THE _.env_ FILE.
-  * FILL THE DATABASE SCHEMA FILE `schema.prisma` IN _prisma_ FOLDER. YOU CAN DO IT MANUALLY OR WITH THE COMMAND:
-    * `npx prisma db pull --schema=./prisma/schema.prisma`
-  * CREATE THE COMMAND `npm run prepare` BY ADDING THE FOLLOWING LINES TO THE _script_ ENTRY IN _package.json_:
-    * `"prepare": "prisma db push --schema=./prisma/schema.prisma && prisma generate --schema=./prisma/schema.prisma",` (THIS COMMAND WILL ALSO RUN EVERY TIME YOU RUN `npm install`)
+
+    ```bash
+    # IF YOUR MYSQL PASSWORD IS EMPTY:
+    npx prisma init --url mysql://root:@localhost:3306/databaseProject
+
+    # IF YOUR MYSQL PASSWORD IS "password":
+    #npx prisma init --url mysql://root:password@localhost:3306/databaseProject
+    ```
+
+  * THE PREVIOUS STEP CREATES THE FILE [_schema.prisma_](../prisma/schema.prisma) IN _prisma_ FOLDER AND MODIFY THE [_.env_](../.env) FILE.
+  * FILL THE DATABASE SCHEMA FILE [_schema.prisma_](../prisma/schema.prisma) IN _prisma_ FOLDER. YOU CAN DO IT MANUALLY OR WITH THE COMMAND:
+
+    ```bash
+    npx prisma db pull --schema=./prisma/schema.prisma
+    ```
+
+  * CREATE THE COMMAND `npm run prepare` BY ADDING THE FOLLOWING LINES TO THE _script_ ENTRY IN [_package.json_](../package.json):
+
+    ```json
+    "prepare": "prisma db push --schema=./prisma/schema.prisma && prisma generate --schema=./prisma/schema.prisma",
+    ```
+
+  NOTE: THE COMMAND `npm run prepare` WILL ALSO RUN EVERY TIME YOU RUN `npm install`.
+
   * CREATE COMMAND `npm run studio` BY ADDING THE FOLLOWING LINES TO THE _script_ ENTRY IN _package.json_:
-    * `"studio": "prisma studio --schema=./prisma/schema.prisma",`
+
+    ```json
+    "studio": "prisma studio --schema=./prisma/schema.prisma",
+    ```
+
   * PREPARE THE DATABASE: `npm run prepare`
-  * RUN PRISMA STUDIO: `npm run studio`
-  * CREATE FILE _modulePrisma.ts_ IN FOLDER _folderModules_.
+  * RUN PRISMA STUDIO:
+
+    ```bash
+    npm run studio
+    ```
+
+  * CREATE FILE [_modulePrisma.ts_](../folderSource/folderModules/modulePrisma.ts) IN FOLDER _folderModules_.
 
 * EXAMPLE (_PRISMA_):
-  * INSTALL THE VSCODE EXTENSION "REST Client" TO SIMULATE POST, PUT AND DELETE REQUESTS.
+  * INSTALL THE VSCODE EXTENSION [_REST Client_](https://marketplace.visualstudio.com/items?itemName=humao.rest-client) TO SIMULATE POST, PUT AND DELETE REQUESTS.
   * CREATE FOLDER _folderPrisma_ IN FOLDER _folderExamples_.
   * CREATE ALL FILES IN _folderPrisma_.
-  * `npm run tsc-nodemon --jsfile=./folderDist/folderExamples/folderPrisma/examplePrisma.js`
+  * RUN THE EXAMPLE:
+
+    ```bash
+    npm run tsc-nodemon --jsfile=./folderDist/folderExamples/folderPrisma/examplePrisma.js
+    ```
 
 * _GRAPHQL_ (QUERY LANGUAGE AND RUNTIME FOR APIs):
   * INSTALL PACKAGES:
-    * `npm install express-graphql`
-    * `npm install graphql-modules`
+
+    ```bash
+    npm install express-graphql
+    npm install graphql-modules
+    ```
 
 * _GRAPHQL PLAYGROUND_ (GRAPHICAL, INTERACTIVE, IN-BROWSER _GRAPHQL_ IDE):
-  * INSTALL PACKAGE: `npm install graphql-playground-html`
+  * INSTALL PACKAGE:
+
+    ```bash
+    npm install graphql-playground-html
+    ```
 
 * EXAMPLE (_GRAPHQL_ WITH _GRAPHQL PLAYGROUND_):
   * CREATE FOLDER _folderGraphql_ IN _folderExamples_.
   * CREATE ALL FILES IN _folderGraphql_.
-  * `npm run tsc-nodemon --jsfile=./folderDist/folderExamples/folderGraphql/exampleGraphql.js`
+  * RUN THE EXAMPLE:
+  
+    ```bash
+    npm run tsc-nodemon --jsfile=./folderDist/folderExamples/folderGraphql/exampleGraphql.js
+    ```
 
 ## PROJECT MAIN CODE
 
-* CREATE _index.ts_ IN _folderSource_.
-* `npm install cross-env`
-* CREATE `npm run dev` COMMAND BY ADDING THE FOLLOWING LINE TO THE _script_ ENTRY IN _package.json_:
-  * `"dev": "cross-env dotenvDevelopmentMode=true npm run tsc-nodemon --jsfile=./folderDist/index.js\"",`
+* CREATE [_index.ts_](../folderSource/index.ts) IN _folderSource_.
+  * INSTALL CROSSENV PACKAGE (RUN SCRIPTS THAT SET AND USE ENVIRONMENT VARIABLES ACROSS PLATFORMS):
+
+    ```bash
+    npm install cross-env
+    ```
+
+* CREATE `npm run dev` COMMAND BY ADDING THE FOLLOWING LINE TO THE _script_ ENTRY IN [_package.json_](../package.json):
+
+  ```json
+  "dev": "cross-env dotenvDevelopmentMode=true npm run tsc-nodemon --jsfile=./folderDist/index.js\"",
+  ```
 
 [BACK](../README.md)
