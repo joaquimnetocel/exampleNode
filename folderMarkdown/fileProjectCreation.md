@@ -30,10 +30,17 @@
 * CREATE README.md
 
 * INITIALIZE THE NODE PACKAGE MANAGER (NPM):
-  * `npm init -y` (THIS IS GOING TO CREATE THE FILE [_package.json_](../package.json))
 
-* ENABLE ES6 IMPORTS/EXPORTS BY ADDING THE FOLLOWING LINE TO _package.json_:
-  * `"type": "module",`
+```bash
+# THIS IS GOING TO CREATE THE FILE package.json.
+npm init -y
+```
+
+* ENABLE ES6 IMPORTS/EXPORTS BY ADDING THE FOLLOWING LINE TO [_package.json_](../package.json):
+
+```json
+"type": "module",
+```
 
 * _ESLINT_ PACKAGE (CODE ANALYSIS TOOL):
   * INSTALL _ESLINT_ EXTENSION IN VSCODE.
