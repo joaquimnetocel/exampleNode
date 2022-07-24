@@ -50,10 +50,6 @@ constExpress.use("/routeGraphqlPlayground", function (req, res) {
 		});
 		constPlaygroundOptions.endpoint = `/routeGraphql?headers=${encodeURIComponent(constHeaders)}`;
 		constPlaygroundOptions.subscriptionEndpoint = `/routeGraphql?headers=${encodeURIComponent(constHeaders)}`;
-		//ALTERNATIVE WAY TO SET HEADERS:
-		// constPlaygroundOptions.settings = {
-		// 	"request.globalHeaders": { authorization: decodeURIComponent(<string>req.query.parAuthorization) },
-		// };
 	};
 	functionSetEndpoint();
 

@@ -1,0 +1,39 @@
+// NPM MODULES
+import { gql } from "graphql-modules";
+/////
+
+const constTypedefs = gql`
+	extend type Query {
+		readAllUsers: [typeUser!]!
+		readUser(argUserId: Int!): typeUser
+	}
+	extend type Mutation {
+		createUser(argData: inputCreateUser!): typeUser!
+		updateUser(argId: Int!, argData: inputUpdateUser): typeUser
+		deleteUser(argId: Int!): typeUser
+	}
+	type typeUser {
+		fieldUserId: Int!
+		fieldName: String!
+		fieldAge: Int
+		fieldLanguage: enumLanguage
+	}
+	input inputCreateUser {
+		fieldName: String!
+		fieldAge: Int
+		fieldLanguage: enumLanguage
+	}
+	input inputUpdateUser {
+		fieldDescription: String!
+		fieldColor: String
+		fieldPrice: Float
+		fieldSize: enumSize
+		fieldLanguage: enumLanguage
+	}
+	enum enumLanguage {
+		enumEnlglish
+		enumPortuguese
+	}
+`;
+
+export { constTypedefs };

@@ -1,35 +1,15 @@
 // NPM MODULES
-import { createModule, gql } from "graphql-modules";
+import { createModule } from "graphql-modules";
 /////
 
-// ID, String, Int, Float, Boolean, DateTime
-
-const constTypedef = gql`
-	type Query {
-		queryHello: String!
-	}
-	type Mutation {
-		mutationHello: String!
-	}
-`;
-
-const constResolvers = {
-	Query: {
-		queryHello: function () {
-			return "Hello query!";
-		},
-	},
-
-	Mutation: {
-		mutationHello: function () {
-			return "Hello mutation!";
-		},
-	},
-};
+// MODULES
+import { constTypedefs } from "./constTypedefs.js";
+import { constResolvers } from "./constResolvers.js";
+/////
 
 const graphqlmoduleHello = createModule({
 	id: "graphqlmoduleHello",
-	typeDefs: [constTypedef],
+	typeDefs: [constTypedefs],
 	resolvers: [constResolvers],
 });
 
