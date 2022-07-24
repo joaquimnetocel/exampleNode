@@ -24,10 +24,8 @@ const constTypedefs = gql`
 		fieldLanguage: enumLanguage
 	}
 	input inputUpdateUser {
-		fieldDescription: String!
-		fieldColor: String
-		fieldPrice: Float
-		fieldSize: enumSize
+		fieldName: String
+		fieldAge: Int
 		fieldLanguage: enumLanguage
 	}
 	enum enumLanguage {
