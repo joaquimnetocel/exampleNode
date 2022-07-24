@@ -26,7 +26,7 @@
     ```
 
 * _PRETTIER_ (CODE FORMATTER):
-  * INSTALL _PRETTIER_ EXTENSION IN _VSCODE_.
+  * INSTALL THE [_PRETTIER_ _VSCODE_ EXTENSION](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode).
   * CREATE [_.prettierrc_](../.prettierrc) FILE. THIS FILE WILL CONTAIN _PRETTIER_ CONFIGURATIONS.
   * CREATE [_.prettierignore_](../.prettierignore) FILE. THIS FILE WILL CONTAIN A LIST OF FILE TYPES IGNORED BY _PRETTIER_.
 
@@ -45,7 +45,7 @@
   ```
 
 * _ESLINT_ PACKAGE (CODE ANALYSIS TOOL):
-  * INSTALL _ESLINT_ EXTENSION IN VSCODE.
+  * INSTALL THE [_ESLINT_ _VSCODE_ EXTENSION](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint).
   * INSTALL THE PACKAGE:
 
     ```bash
@@ -129,7 +129,7 @@
     ```
 
 * _DOTENV_ PACKAGE (ENVIRONMENT VARIABLES):
-  * INSTALL _DOTENV_ EXTENSION IN VSCODE.
+  * INSTALL THE [_DOTENV_ _VSCODE_ EXTENSION](https://marketplace.visualstudio.com/items?itemName=mikestead.dotenv).
   * INSTALL THE PACKAGE:
 
     ```bash
@@ -179,7 +179,7 @@
     ```
 
 * EXAMPLE (POST, PUT, DELETE AND JSON BODY PARSER):
-  * INSTALL THE VSCODE EXTENSION "REST Client" TO SIMULATE POST, PUT AND DELETE REQUESTS.
+  * INSTALL THE [_REST CLIENT_ _VSCODE_ EXTENSION](https://marketplace.visualstudio.com/items?itemName=humao.rest-client) TO SIMULATE POST, PUT AND DELETE REQUESTS.
   * CREATE FOLDER _folderJsonBodyParser_ IN _folderExamples_.
   * CREATE ALL FILES IN _folderJsonBodyParser_.
   * RUN THE EXAMPLE:
@@ -317,8 +317,8 @@
     npm run tsc-nodemon --jsfile=./folderDist/folderExamples/examplePathAlias.js
     ```
 
-* _PRISMA_ (ORM):
-  * INSTALL _PRISMA_ EXTENSION IN VSCODE.
+* _PRISMA_ (OBJECT RELATIONAL MAPPING-ORM):
+  * INSTALL [_PRISMA_ _VSCODE_ EXTENSION](https://marketplace.visualstudio.com/items?itemName=Prisma.prisma).
   * INSTALL THE PACKAGE:
   
     ```bash
@@ -372,7 +372,7 @@
   * CREATE FILE [_modulePrisma.ts_](../folderSource/folderModules/modulePrisma.ts) IN FOLDER _folderModules_.
 
 * EXAMPLE (_PRISMA_):
-  * INSTALL THE VSCODE EXTENSION [_REST Client_](https://marketplace.visualstudio.com/items?itemName=humao.rest-client) TO SIMULATE POST, PUT AND DELETE REQUESTS.
+  * INSTALL THE [_REST Client_ _VSCODE_ EXTENSION](https://marketplace.visualstudio.com/items?itemName=humao.rest-client) TO SIMULATE POST, PUT AND DELETE REQUESTS.
   * CREATE FOLDER _folderPrisma_ IN FOLDER _folderExamples_.
   * CREATE ALL FILES IN _folderPrisma_.
   * RUN THE EXAMPLE:
@@ -382,6 +382,7 @@
     ```
 
 * _GRAPHQL_ (QUERY LANGUAGE AND RUNTIME FOR APIs):
+  * INSTALL THE [_GRAPHQL_ _VSCODE_ EXTENSION](https://marketplace.visualstudio.com/items?itemName=GraphQL.vscode-graphql).
   * INSTALL PACKAGES:
 
     ```bash
