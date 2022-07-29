@@ -384,7 +384,7 @@
     ```
 
 * _ESBUILD_:
-  * INSTALL THE PACKAGE:
+  * INSTALL PACKAGES:
 
     ```bash
     npm install -D esbuild
