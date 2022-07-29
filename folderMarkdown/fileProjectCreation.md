@@ -391,11 +391,12 @@
     npm install -D esbuild-node-tsc
     ```
 
-  * CREATE FILE _etsc.config.cjs_.
-  * CREATE COMMAND `npm run etsc-nodemon` BY ADDING THE FOLLOWING LINES TO THE _script_ ENTRY IN _package.json_:
+  * CREATE FILE _esbuild.development.config.cjs_.
+  * CREATE FILE _esbuild.production.config.js_.
+  * CREATE COMMAND `npm run esbuild-nodemon` BY ADDING THE FOLLOWING LINES TO THE _script_ ENTRY IN _package.json_:
 
     ```json
-    "etsc-nodemon": "nodemon --exec \"etsc --config=etsc.config.cjs && node %npm_config_jsfile%\"",
+    "esbuild-nodemon": "nodemon --exec \"etsc --config=esbuild.development.config.cjs && node %npm_config_jsfile%\"",
     ```
 
 * _GRAPHQL_ (QUERY LANGUAGE AND RUNTIME FOR APIs):
@@ -432,16 +433,16 @@
   npm install cross-env
   ```
 
-* CREATE `npm run dev` COMMAND BY ADDING THE FOLLOWING LINE TO THE _script_ ENTRY IN [_package.json_](../package.json):
+* CREATE `npm run tsc-dev` COMMAND BY ADDING THE FOLLOWING LINE TO THE _script_ ENTRY IN [_package.json_](../package.json):
 
   ```json
   "dev": "cross-env dotenvDevelopmentMode=true npm run tsc-nodemon --jsfile=./folderDist/index.js\"",
   ```
 
-* CREATE `npm run edev` COMMAND BY ADDING THE FOLLOWING LINE TO THE _script_ ENTRY IN [_package.json_](../package.json):
+* CREATE `npm run esbuild-dev` COMMAND BY ADDING THE FOLLOWING LINE TO THE _script_ ENTRY IN [_package.json_](../package.json):
 
   ```json
-  "edev": "cross-env dotenvDevelopmentMode=true npm run etsc-nodemon --jsfile=./folderDist/index.js\"",
+  "esbuild-dev": "cross-env dotenvDevelopmentMode=true npm run esbuild-nodemon --jsfile=./folderDist/index.js\"",
   ```
 
 [BACK](../README.md)

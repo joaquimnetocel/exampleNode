@@ -11,11 +11,11 @@
 	"main": "./folderDist/index.js",
 	"scripts": {
 		"tsc-nodemon": "nodemon --exec \"tsc --skipLibCheck && node %npm_config_jsfile%\"",
-		"etsc-nodemon": "nodemon --exec \"etsc --config=etsc.config.cjs && node %npm_config_jsfile%\"",
+		"esbuild-nodemon": "nodemon --exec \"etsc --config=esbuild.development.config.cjs && node %npm_config_jsfile%\"",
 		"prepare": "prisma db push --schema=./prisma/schema.prisma && prisma generate --schema=./prisma/schema.prisma",
 		"studio": "prisma studio --schema=./prisma/schema.prisma",
-		"dev": "cross-env dotenvDevelopmentMode=true npm run tsc-nodemon --jsfile=./folderDist/index.js\"",
-		"edev": "cross-env dotenvDevelopmentMode=true npm run etsc-nodemon --jsfile=./folderDist/index.js\"",
+		"tsc-dev": "cross-env dotenvDevelopmentMode=true npm run tsc-nodemon --jsfile=./folderDist/index.js\"",
+		"esbuild-dev": "cross-env dotenvDevelopmentMode=true npm run esbuild-nodemon --jsfile=./folderDist/index.js\"",
 		"test": "echo \"Error: no test specified\" && exit 1"
 	},
 	"keywords": [],
