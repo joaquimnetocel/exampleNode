@@ -103,6 +103,8 @@
     npm install -D nodemon`
     ```
 
+  * CREATE FILE _nodemon.json_.
+
 * EXAMPLE (HELLO WORLD WITH _NODEMON_):
   * RUN THE EXAMPLE:
 
@@ -268,7 +270,7 @@
   * CREATE COMMAND `npm run tsc-nodemon` BY ADDING THE FOLLOWING LINES TO THE _script_ ENTRY IN _package.json_:
 
     ```json
-    "tsc-nodemon": "nodemon --ext ts --exec \"npx tsc --skipLibCheck && node %npm_config_jsfile%\"",
+    "tsc-nodemon": "nodemon --exec \"tsc --skipLibCheck && node %npm_config_jsfile%\"",
     ```
 
 * EXAMPLE (HELLO WORLD WITH _TYPESCRIPT_ AND _NODEMON_):
@@ -381,6 +383,21 @@
     npm run tsc-nodemon --jsfile=./folderDist/folderExamples/folderPrisma/examplePrisma.js
     ```
 
+* _ESBUILD_:
+  * INSTALL THE PACKAGE:
+
+    ```bash
+    npm install -D esbuild
+    npm install -D esbuild-node-tsc
+    ```
+
+  * CREATE FILE _etsc.config.cjs_.
+  * CREATE COMMAND `npm run etsc-nodemon` BY ADDING THE FOLLOWING LINES TO THE _script_ ENTRY IN _package.json_:
+
+    ```json
+    "etsc-nodemon": "nodemon --exec \"etsc --config=etsc.config.cjs && node %npm_config_jsfile%\"",
+    ```
+
 * _GRAPHQL_ (QUERY LANGUAGE AND RUNTIME FOR APIs):
   * INSTALL THE [_GRAPHQL_ _VSCODE_ EXTENSION](https://marketplace.visualstudio.com/items?itemName=GraphQL.vscode-graphql).
   * INSTALL PACKAGES:
@@ -409,16 +426,22 @@
 ## PROJECT MAIN CODE
 
 * CREATE [_index.ts_](../folderSource/index.ts) IN _folderSource_.
-  * INSTALL CROSSENV PACKAGE (RUN SCRIPTS THAT SET AND USE ENVIRONMENT VARIABLES ACROSS PLATFORMS):
+* INSTALL CROSSENV PACKAGE (RUN SCRIPTS THAT SET AND USE ENVIRONMENT VARIABLES ACROSS PLATFORMS):
 
-    ```bash
-    npm install cross-env
-    ```
+  ```bash
+  npm install cross-env
+  ```
 
 * CREATE `npm run dev` COMMAND BY ADDING THE FOLLOWING LINE TO THE _script_ ENTRY IN [_package.json_](../package.json):
 
   ```json
   "dev": "cross-env dotenvDevelopmentMode=true npm run tsc-nodemon --jsfile=./folderDist/index.js\"",
+  ```
+
+* CREATE `npm run edev` COMMAND BY ADDING THE FOLLOWING LINE TO THE _script_ ENTRY IN [_package.json_](../package.json):
+
+  ```json
+  "edev": "cross-env dotenvDevelopmentMode=true npm run etsc-nodemon --jsfile=./folderDist/index.js\"",
   ```
 
 [BACK](../README.md)

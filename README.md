@@ -55,8 +55,11 @@ npm install
 ```
 
 ```bash
-# RUN ON DEVELOPMENT MODE:
+# RUN ON DEVELOPMENT MODE WITH TYPESCRIPT:
 npm run dev
+
+# RUN ON DEVELOPMENT MODE WITH ESBUILD:
+npm run edev
 ```
 
 ```bash
