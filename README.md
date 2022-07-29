@@ -73,8 +73,8 @@ node ./folderDist/index.js
 
 ```bash
 # BUNDLE WITH ESBUILD AND RUN ON PRODUCTION MODE 
-node esbuild.production.config.js # THIS IS GOING TO CREATE/BUNDLE ./folderBuild/index.js
-node ./folderBuild/index.js
+node esbuild.production.config.js # THIS IS GOING TO CREATE/BUNDLE ./folderBundle/index.js
+node ./folderBundle/index.js
 ```
 
 ## CONTRIBUTING

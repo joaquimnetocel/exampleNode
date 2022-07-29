@@ -2,7 +2,7 @@ import { build } from "esbuild";
 
 build({
 	entryPoints: ["./folderSource/index.ts"],
-	outfile: "./folderBuild/index.js",
+	outfile: "./folderBundle/index.js",
 	minify: true,
 	bundle: true,
 	platform: "node",

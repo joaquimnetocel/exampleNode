@@ -391,6 +391,7 @@
     npm install -D esbuild-node-tsc
     ```
 
+  * ADD _folderBundle_ to _.gitignore_.
   * CREATE FILE _esbuild.development.config.cjs_.
   * CREATE FILE _esbuild.production.config.js_.
   * CREATE COMMAND `npm run esbuild-nodemon` BY ADDING THE FOLLOWING LINES TO THE _script_ ENTRY IN _package.json_:
