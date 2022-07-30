@@ -29,6 +29,8 @@
   #npx prisma init --url mysql://root:password@localhost:3306/databaseProject
   ```
 
+![PRISMA DATA SOURCE](./filePrismaDatasource.png)
+
 ## CONFIGURATION
 
 * THE PREVIOUS STEP CREATES THE FILE [_schema.prisma_](../../../prisma/schema.prisma) IN _prisma_ FOLDER AND MODIFY THE [_.env_](../.env) FILE.

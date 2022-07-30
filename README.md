@@ -50,9 +50,11 @@ THIS PROJECT IS AN EXAMPLE OF **[NODE](https://nodejs.org)**.
 
 ![PRISMA DATA SOURCE](./folderMarkdown/folderProjectCreation/filePrismaDatasource.png)
 
-```bash
-npm run database
-```
+* CREATE THE DATABASE AND PREPARE PRISMA:
+
+  ```bash
+  npm run database
+  ```
 
 ## QUICK START
 
