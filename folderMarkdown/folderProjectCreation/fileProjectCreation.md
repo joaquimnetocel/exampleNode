@@ -374,10 +374,10 @@
     npx prisma db pull --schema=./prisma/schema.prisma
     ```
 
-  * CREATE THE COMMAND `npm run prepare` BY ADDING THE FOLLOWING LINES TO THE _script_ ENTRY IN [_package.json_](../package.json):
+  * CREATE THE COMMAND `npm run database` BY ADDING THE FOLLOWING LINES TO THE _script_ ENTRY IN [_package.json_](../package.json):
 
     ```json
-    "prepare": "prisma db push --schema=./prisma/schema.prisma && prisma generate --schema=./prisma/schema.prisma",
+    "database": "prisma db push --schema=./prisma/schema.prisma && prisma generate --schema=./prisma/schema.prisma",
     ```
 
   NOTE: THE COMMAND `npm run prepare` WILL ALSO RUN EVERY TIME YOU RUN `npm install`.
