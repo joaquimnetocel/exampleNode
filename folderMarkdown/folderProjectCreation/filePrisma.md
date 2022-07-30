@@ -33,14 +33,14 @@
 
 ## CONFIGURATION
 
-* THE PREVIOUS STEP CREATES THE FILE [_schema.prisma_](../../../prisma/schema.prisma) IN _prisma_ FOLDER AND MODIFY THE [_.env_](../.env) FILE.
-* FILL THE DATABASE SCHEMA FILE [_schema.prisma_](../../../prisma/schema.prisma) IN _prisma_ FOLDER. YOU CAN DO IT MANUALLY OR IMPORT THE DATABASE STRUCTURE WITH THE COMMAND:
+* THE PREVIOUS STEP CREATES THE FILE [_schema.prisma_](../../prisma/schema.prisma) IN _prisma_ FOLDER AND MODIFY THE [_.env_](../../.env) FILE.
+* FILL THE DATABASE SCHEMA FILE [_schema.prisma_](../../prisma/schema.prisma) IN _prisma_ FOLDER. YOU CAN DO IT MANUALLY OR IMPORT THE DATABASE STRUCTURE WITH THE COMMAND:
 
   ```bash
   npx prisma db pull --schema=./prisma/schema.prisma
   ```
 
-* CREATE THE COMMAND `npm run database` BY ADDING THE FOLLOWING LINES TO THE _script_ ENTRY IN [_package.json_](../package.json):
+* CREATE THE COMMAND `npm run database` BY ADDING THE FOLLOWING LINES TO THE _script_ ENTRY IN [_package.json_](../../package.json):
 
   ```json
   "database": "prisma db push --schema=./prisma/schema.prisma && prisma generate --schema=./prisma/schema.prisma",
