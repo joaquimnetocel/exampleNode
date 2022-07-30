@@ -35,9 +35,9 @@ THIS PROJECT IS AN EXAMPLE OF **[NODE](https://nodejs.org)**.
 
 * YOU CAN CLONE THIS REPOSITORY USING _GIT_:
 
-```bash
-git clone https://github.com/joaquimnetocel/exampleNode.git
-```
+  ```bash
+  git clone https://github.com/joaquimnetocel/exampleNode.git
+  ```
 
 * OR YOU CAN DOWNLOAD THE REPOSITORY [HERE](https://github.com/joaquimnetocel/exampleNode/archive/refs/heads/master.zip).
 

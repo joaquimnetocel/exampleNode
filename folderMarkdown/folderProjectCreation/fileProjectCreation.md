@@ -1,13 +1,12 @@
 # PROJECT CREATION
 
-## PREREQUISITES
+## PREREQUISITE
 
-* CONFIGURE EXECUTION POLICY:
-  * OPEN _VSCODE_ AS ADMINISTRATOR AND RUN THE FOLLOWING COMMAND IN TERMINAL:
+* TO CREATE THIS PROJECT FROM ZERO, WE HAVE TO CONFIGURE THE EXECUTION POLICY. OPEN _VSCODE_ AS ADMINISTRATOR AND RUN THE FOLLOWING COMMAND IN TERMINAL:
 
-    ```bash
-    Set-ExecutionPolicy RemoteSigned
-    ```  
+  ```bash
+  Set-ExecutionPolicy RemoteSigned
+  ```  
 
 ## INSTRUCTIONS
 
@@ -25,9 +24,9 @@
     node ./folderSource/folderExamples/exampleHelloWorld.js
     ```
 
-* PRETTIER (INSTRUCTIONS [HERE](./filePrettier.md))
+* PRETTIER (INSTRUCTIONS [HERE](./filePrettier.md)).
 
-* CREATE [README.md](../../README.md)
+* CREATE [README.md](../../README.md).
 
 * INITIALIZE THE _NODE PACKAGE MANAGER_ (_NPM_):
 
@@ -55,24 +54,7 @@
     npx nodemon ./folderSource/folderExamples/exampleTemplateStrings.js
     ```
 
-* _DOTENV_ PACKAGE (ENVIRONMENT VARIABLES):
-  * INSTALL THE [_DOTENV_ _VSCODE_ EXTENSION](https://marketplace.visualstudio.com/items?itemName=mikestead.dotenv).
-  * INSTALL THE PACKAGE:
-
-    ```bash
-    npm install dotenv
-    ```
-
-  * CREATE [_.env_](../../.env) FILE. THIS FILE WILL CONTAIN ENVIRONMENTAL VARIABLES AVAILABLE THROUGH `process.env.variablename`.
-  * ADD _.env_ AS A NEW LINE IN [_.gitignore_](../../.gitignore) (GOOD PRACTICE).
-
-* EXAMPLE (_DOTENV_):
-  * CREATE FILE [_exampleDotenv.js_](../../folderSource/folderExamples/exampleDotenv.js) IN _folderExamples_.
-  * RUN THE EXAMPLE:
-
-    ```bash
-    npx nodemon ./folderSource/folderExamples/exampleDotenv.js
-    ```
+* _DOTENV_ PACKAGE (INSTRUCTIONS [HERE](./fileDotenv.md)).
 
 * _EXPRESS_ PACKAGE (INSTRUCTIONS [HERE](./fileExpress.md))
 
