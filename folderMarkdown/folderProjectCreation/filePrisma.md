@@ -52,7 +52,12 @@
   "studio": "prisma studio --schema=./prisma/schema.prisma",
   ```
 
-* PREPARE THE DATABASE: `npm run database`
+* CREATE THE DATABASE AND PREPARE PRISMA:
+
+```bash
+npm run database
+```
+
 * RUN PRISMA STUDIO:
 
   ```bash
