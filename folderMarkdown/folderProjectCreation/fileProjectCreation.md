@@ -18,7 +18,7 @@
   * CREATE FOLDER _folderViews_ IN _folderSource_.
 
 * EXAMPLE (HELLO WORLD WITH _NODE_):
-  * CREATE [_exampleHelloWorld.js_](../folderSource/folderExamples/exampleHelloWorld.js) IN _folderExamples_.
+  * CREATE [_exampleHelloWorld.js_](../../folderSource/folderExamples/exampleHelloWorld.js) IN _folderExamples_.
   * RUN THE EXAMPLE:
 
     ```bash
@@ -123,7 +123,7 @@
   * ADD `node_modules` AS A NEW LINE IN [_.gitignore_](../.gitignore).
 
 * EXAMPLE (_TEMPLATE STRINGS_ WITH _NODEMON_):
-  * CREATE [_exampleTemplateStrings.js_](../folderSource/folderExamples/exampleTemplateStrings.js) IN _folderExamples_.
+  * CREATE [_exampleTemplateStrings.js_](../../folderSource/folderExamples/exampleTemplateStrings.js) IN _folderExamples_.
   * RUN THE EXAMPLE:
 
     ```bash
@@ -142,7 +142,7 @@
   * ADD _.env_ AS A NEW LINE IN [_.gitignore_](../.gitignore) (GOOD PRACTICE).
 
 * EXAMPLE (_DOTENV_):
-  * CREATE FILE [_exampleDotenv.js_](../folderSource/folderExamples/exampleDotenv.js) IN _folderExamples_.
+  * CREATE FILE [_exampleDotenv.js_](../../folderSource/folderExamples/exampleDotenv.js) IN _folderExamples_.
   * RUN THE EXAMPLE:
 
     ```bash
@@ -163,7 +163,7 @@
     ```
 
 * EXAMPLE (_EXPRESS_):
-  * CREATE [_exampleExpress.js_](../folderSource/folderExamples/exampleExpress.js) IN _folderExample_.
+  * CREATE [_exampleExpress.js_](../../folderSource/folderExamples/exampleExpress.js) IN _folderExample_.
   * RUN THE EXAMPLE:
   
     ```bash
@@ -173,7 +173,7 @@
     ![REQUEST AND RESPONSE IMAGE](./fileRequestAndResponseImage.png)
 
 * EXAMPLE (URL PARAMETERS):
-  * CREATE [_exampleUrlParameters.js_](../folderSource/folderExamples/exampleUrlParameters.js) IN _folderExample_.
+  * CREATE [_exampleUrlParameters.js_](../../folderSource/folderExamples/exampleUrlParameters.js) IN _folderExample_.
   * RUN THE EXAMPLE:
   
     ```bash
@@ -198,8 +198,8 @@
     ```
 
 * EXAMPLE (_EJS_):
-  * CREATE FILE [_exampleEjs.js_](../folderSource/folderExamples/exampleEjs.js) IN _folderExamples_.
-  * CREATE FILE [_template.ejs_](../folderSource/folderViews/template.ejs) IN _folderViews_.
+  * CREATE FILE [_exampleEjs.js_](../../folderSource/folderExamples/exampleEjs.js) IN _folderExamples_.
+  * CREATE FILE [_template.ejs_](../../folderSource/folderViews/template.ejs) IN _folderViews_.
   * RUN THE EXAMPLE:
 
     ```bash
@@ -207,7 +207,7 @@
     ```
 
 * EXAMPLE (MIDDLEWARES):
-  * CREATE [_exampleMiddlewares.js_](../folderSource/folderExamples/exampleMiddlewares.js) IN _folderExamples_.
+  * CREATE [_exampleMiddlewares.js_](../../folderSource/folderExamples/exampleMiddlewares.js) IN _folderExamples_.
   * RUN THE EXAMPLE:
   
     ```bash
@@ -228,7 +228,7 @@
     ```
 
 * EXAMPLE (_CORS_ MIDDLEWARE):
-  * CREATE FILE [_exampleCors.js_](../folderSource/folderExamples/exampleCors.js) IN _folderExamples_.
+  * CREATE FILE [_exampleCors.js_](../../folderSource/folderExamples/exampleCors.js) IN _folderExamples_.
   * RUN THE EXAMPLE:
   
     ```bash
@@ -258,7 +258,7 @@
   * ADD _folderDist_ AS A NEW LINE IN [_.gitignore_](../.gitignore).
 
 * EXAMPLE (HELLO WORLD WITH _TYPESCRIPT_ AND _NODE_):
-  * CREATE [_exampleHelloWorld.ts_](../folderSource/folderExamples/exampleHelloWorld.ts) IN _folderExamples_.
+  * CREATE [_exampleHelloWorld.ts_](../../folderSource/folderExamples/exampleHelloWorld.ts) IN _folderExamples_.
   * RUN THE EXAMPLE:
   
     ```bash
@@ -302,8 +302,8 @@
     ```
 
 * EXAMPLE (PATH ALIAS WITH _JAVASCRIPT_):
-  * CREATE [_functionSum.js_](../folderSource/folderExamples/functionSum.js) IN _folderExamples_.
-  * CREATE [_examplePathAlias.js_](../folderSource/folderExamples/examplePathAlias.js) IN _folderExamples_.
+  * CREATE [_functionSum.js_](../../folderSource/folderExamples/functionSum.js) IN _folderExamples_.
+  * CREATE [_examplePathAlias.js_](../../folderSource/folderExamples/examplePathAlias.js) IN _folderExamples_.
   * RUN THE EXAMPLE:
   
     ```bash
@@ -311,8 +311,8 @@
     ```
 
 * EXAMPLE (PATH ALIAS WITH _TYPESCRIPT_):
-  * CREATE [_functionSubtraction.ts_](../folderSource/folderExamples/functionSubtraction.ts) IN _folderExamples_.
-  * CREATE [_examplePathAlias.ts_](../folderSource/folderExamples/examplePathAlias.ts) IN _folderExamples_.
+  * CREATE [_functionSubtraction.ts_](../../folderSource/folderExamples/functionSubtraction.ts) IN _folderExamples_.
+  * CREATE [_examplePathAlias.ts_](../../folderSource/folderExamples/examplePathAlias.ts) IN _folderExamples_.
   * RUN THE EXAMPLE
   
     ```bash
@@ -395,7 +395,7 @@
     npm run studio
     ```
 
-  * CREATE FILE [_modulePrisma.ts_](../folderSource/folderModules/modulePrisma.ts) IN FOLDER _folderModules_.
+  * CREATE FILE [_modulePrisma.ts_](../../folderSource/folderModules/modulePrisma.ts) IN FOLDER _folderModules_.
 
 * EXAMPLE (_PRISMA_):
   * INSTALL THE [_REST Client_ _VSCODE_ EXTENSION](https://marketplace.visualstudio.com/items?itemName=humao.rest-client) TO SIMULATE POST, PUT AND DELETE REQUESTS.
@@ -434,7 +434,7 @@
 
 ## PROJECT MAIN CODE
 
-* CREATE [_index.ts_](../folderSource/index.ts) IN _folderSource_.
+* CREATE [_index.ts_](../../folderSource/index.ts) IN _folderSource_.
 * INSTALL CROSSENV PACKAGE (RUN SCRIPTS THAT SET AND USE ENVIRONMENT VARIABLES ACROSS PLATFORMS):
 
   ```bash
