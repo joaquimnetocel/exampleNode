@@ -32,7 +32,7 @@
 ## CONFIGURATION
 
 * THE PREVIOUS STEP CREATES THE FILE [_schema.prisma_](../../../prisma/schema.prisma) IN _prisma_ FOLDER AND MODIFY THE [_.env_](../.env) FILE.
-* FILL THE DATABASE SCHEMA FILE [_schema.prisma_](../../../prisma/schema.prisma) IN _prisma_ FOLDER. YOU CAN DO IT MANUALLY OR WITH THE COMMAND:
+* FILL THE DATABASE SCHEMA FILE [_schema.prisma_](../../../prisma/schema.prisma) IN _prisma_ FOLDER. YOU CAN DO IT MANUALLY OR IMPORT THE DATABASE STRUCTURE WITH THE COMMAND:
 
   ```bash
   npx prisma db pull --schema=./prisma/schema.prisma
