@@ -26,6 +26,13 @@
 
 * PRETTIER (INSTRUCTIONS [HERE](./filePrettier.md)).
 
+* CREATE A FIRST NPM SCRIPT.
+  * CREATE `npm run hello` COMMAND BY ADDING THE FOLLOWING LINE TO THE _script_ ENTRY IN [_package.json_](../package.json):
+
+    ```json
+    "hello": "node ./folderSource/folderExamples/exampleHelloWorld.js",
+    ```
+
 * CREATE [README.md](../../README.md).
 
 * INITIALIZE THE _NODE PACKAGE MANAGER_ (_NPM_):

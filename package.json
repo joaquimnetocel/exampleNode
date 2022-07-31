@@ -10,6 +10,7 @@
 	"description": "EXAMPLE OF NODE PROJECT",
 	"main": "./folderDist/index.js",
 	"scripts": {
+		"hello": "node ./folderSource/folderExamples/exampleHelloWorld.js",
 		"tsc-nodemon": "nodemon --exec \"tsc --skipLibCheck && node %npm_config_jsfile%\"",
 		"esbuild-nodemon": "nodemon --exec \"etsc --config=esbuild.development.config.cjs && node %npm_config_jsfile%\"",
 		"database": "prisma db push --schema=./prisma/schema.prisma && prisma generate --schema=./prisma/schema.prisma",
