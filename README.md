@@ -4,6 +4,8 @@
 
 THIS PROJECT IS AN EXAMPLE OF **[NODE](https://nodejs.org)**.
 
+![NODE IMAGE](./folderMarkdown/node.jpg)
+
 ## BUILT USING
 
 * **[NODE](https://nodejs.org)**: JAVASCRIPT RUNTIME BUILT ON [_CHROME'S V8 JAVASCRIPT ENGINE_](https://v8.dev).
