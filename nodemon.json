@@ -1,5 +1,5 @@
 {
 	"watch": ["folderSource"],
 	"ignore": ["folderSource/**/*.test.ts", "node_modules"],
-	"ext": "ts"
+	"ext": "ts, js"
 }
