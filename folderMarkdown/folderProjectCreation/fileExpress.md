@@ -38,7 +38,7 @@
   npx nodemon ./folderSource/folderExamples/exampleUrlParameters.js
   ```
 
-## EXAMPLE: POST, PUT, DELETE AND JSON BODY PARSER
+## EXAMPLE (POST, PUT, DELETE AND JSON BODY PARSER)
 
 * INSTALL THE [_REST CLIENT_ _VSCODE_ EXTENSION](https://marketplace.visualstudio.com/items?itemName=humao.rest-client) TO SIMULATE POST, PUT AND DELETE REQUESTS.
 * CREATE FOLDER _folderJsonBodyParser_ IN _folderExamples_.
@@ -47,6 +47,16 @@
   
   ```bash
   npx nodemon ./folderSource/folderExamples/folderJsonBodyParser/exampleJsonBodyParser.js
+  ```
+
+## EXAMPLE (FORM URLENCODED BODY PARSER)
+
+* CREATE FOLDER _folderFormBodyParser_ IN _folderExamples_.
+* CREATE ALL FILES IN _folderFormBodyParser_.
+* RUN THE EXAMPLE:
+  
+  ```bash
+  npx nodemon ./folderSource/folderExamples/folderFormBodyParser/exampleFormBodyParser.js
   ```
 
 ## _EJS_ TEMPLATING LANGUAGE
