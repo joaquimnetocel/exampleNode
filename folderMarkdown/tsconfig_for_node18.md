@@ -1,18 +1,18 @@
-# What TypeScript configuration produces output closest to Node.js 16 capabilities?
+# What TypeScript configuration produces output closest to Node.js 18 capabilities?
 
-As of Node.js 16.0.0, 100% of ES2021 is supported, and support for ES Modules is stable! If you know that you are targeting that version or newer, the optimal config would look like this:
+As of Node.js 18.0.0, 100% of ES2022 is supported (apart from a bug in RegEx.flags), and support for ES Modules is stable! If you know that you are targeting that version or newer, the optimal config would look like this:
 
 * `"module": "ES2020"` & `"moduleResolution": "node"`
-Node.js 16 support loading modules instead of the old CommonJS format, we do have to tell TypeScript that we are using Node.js's rules for resolving modules.
+Node.js 18 support loading modules instead of the old CommonJS format, we do have to tell TypeScript that we are using Node.js's rules for resolving modules.
 
 * `"allowSyntheticDefaultImports": true`
 To provide backwards compatibility, Node.js allows you to import CommonJS packages with a default import. This flag tells TypeScript that it's okay to use import on CommonJS modules.
 
-* `"target": "ES2021"`
-This tells TypeScript that it's okay to output JavaScript syntax with features from ES2021. In practice, this means that it will e.g. output logical assignment operators & async/await syntax instead of embedding a polyfill.
+* `"target": "ES2022"`
+This tells TypeScript that it's okay to output JavaScript syntax with features from ES2022. In practice, this means that it will e.g. output logical assignment operators & async/await syntax instead of embedding a polyfill.
 
-* `"lib": ["ES2021"]`
-This tells TypeScript that it's okay to use functions and properties introduced in ES2021 or earlier. In practice, this means that you can use e.g. Promise.any and String.prototype.replaceAll.
+* `"lib": ["ES2022"]`
+This tells TypeScript that it's okay to use functions and properties introduced in ES2022 or earlier. In practice, this means that you can use e.g. Promise.any and String.prototype.replaceAll.
 
 The full config would thus be:
 
@@ -20,10 +20,10 @@ The full config would thus be:
 {
   "compilerOptions": {
     "allowSyntheticDefaultImports": true,
-    "lib": ["ES2021"],
+    "lib": ["ES2022"],
     "module": "ES2020",
     "moduleResolution": "node",
-    "target": "ES2021"
+    "target": "ES2022"
   }
 }
 ```
@@ -56,11 +56,9 @@ If you want to stick with CommonJS for now, to avoid the caveats explained above
 ```json
 {
   "compilerOptions": {
-    "lib": ["ES2021"],
+    "lib": ["ES2022"],
     "module": "CommonJS",
-    "target": "ES2021"
+    "target": "ES2022"
   }
 }
 ```
-
-If you are running Node.js 18 you can see the [similar configuration for Node.js 18 here](https://stackoverflow.com/a/72380008/148072).
