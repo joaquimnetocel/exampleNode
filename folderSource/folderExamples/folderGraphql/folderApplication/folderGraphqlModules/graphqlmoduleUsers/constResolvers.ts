@@ -24,6 +24,19 @@ const constResolvers = {
 			}
 			return constSelectedUser[0];
 		},
+
+		// eslint-disable-next-line @typescript-eslint/no-explicit-any
+		readLoggedUser: function (argParent: any, argArguments: any, argContext: any) {
+			console.log("GETTING LOGGED USER...");
+			const constSelectedUser = constFakeUserDatabaseTable.filter((currentUser) => currentUser.fieldUserId === argContext.User.LoggedId);
+			if (constSelectedUser.length === 0) {
+				return null;
+			}
+			if (constSelectedUser.length > 1) {
+				throw "MORE THAN ONE USER WITH THE SAME ID";
+			}
+			return constSelectedUser[0];
+		},
 	},
 
 	Mutation: {

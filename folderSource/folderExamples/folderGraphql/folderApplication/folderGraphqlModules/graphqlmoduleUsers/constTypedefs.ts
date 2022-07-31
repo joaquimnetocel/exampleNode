@@ -6,6 +6,7 @@ const constTypedefs = gql`
 	extend type Query {
 		readAllUsers: [typeUser!]!
 		readUser(argUserId: Int!): typeUser
+		readLoggedUser: typeUser
 	}
 	extend type Mutation {
 		createUser(argData: inputCreateUser!): typeUser!
