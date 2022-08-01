@@ -40,6 +40,8 @@
   npx prisma db pull --schema=./prisma/schema.prisma
   ```
 
+* WINDOWS BUG FIX: IF WORKING WITH WINDOWS, OPEN THE MYSQL FILE _my.ini_ AND ADD `lower_case_table_names=2` RIGHT AFTER THE LINE `[mysqld]`. RESTART THE MYSQL SERVER. THIS IS GOING TO ENABLE UPPERCASE IN MYSQL TABLE NAMES.
+
 * CREATE THE COMMAND `npm run database` BY ADDING THE FOLLOWING LINES TO THE _script_ ENTRY IN [_package.json_](../../package.json):
 
   ```json

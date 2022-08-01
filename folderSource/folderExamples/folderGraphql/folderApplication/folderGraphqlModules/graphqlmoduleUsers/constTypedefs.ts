@@ -4,7 +4,7 @@ import { gql } from "graphql-modules";
 
 const constTypedefs = gql`
 	extend type Query {
-		readAllUsers: [typeUser!]!
+		readUsers: [typeUser!]!
 		readUser(argUserId: Int!): typeUser
 		readLoggedUser: typeUser
 	}

@@ -11,8 +11,24 @@ datasource db {
 }
 
 model tableUsers {
-    fieldUserId Int    @id @default(autoincrement())
-    fieldEmail  String @unique
+    fieldUserId Int          @id @default(autoincrement())
+    fieldEmail  String       @unique
     fieldName   String
     fieldAge    Int?
+    tablePosts  tablePosts[]
+}
+
+model tablePosts {
+    fieldPostId      Int        @id @default(autoincrement())
+    fieldUserIndex   Int
+    fieldDescription String
+    fieldStatus      enumStatus
+    tableUsers       tableUsers @relation(fields: [fieldUserIndex], references: [fieldUserId], onDelete: Cascade, onUpdate: Cascade, map: "relationPostsUsers")
+
+    @@index([fieldUserIndex], map: "fieldUserIndex")
+}
+
+enum enumStatus {
+    enumPublished
+    enumDraft
 }

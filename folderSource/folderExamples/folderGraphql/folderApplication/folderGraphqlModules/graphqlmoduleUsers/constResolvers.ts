@@ -1,5 +1,5 @@
 // FAKE DATABASE TABLE
-const constFakeUserDatabaseTable = [
+const arrayFakeUsersDatabaseTable = [
 	{ fieldUserId: 1, fieldName: "John", fieldAge: 20 },
 	{ fieldUserId: 2, fieldName: "Mark", fieldAge: 30 },
 ];
@@ -7,35 +7,35 @@ const constFakeUserDatabaseTable = [
 
 const constResolvers = {
 	Query: {
-		readAllUsers: function () {
+		readUsers: function () {
 			console.log("GETTING ALL USERS...");
-			return constFakeUserDatabaseTable;
+			return arrayFakeUsersDatabaseTable;
 		},
 
 		// eslint-disable-next-line @typescript-eslint/no-explicit-any
 		readUser: function (argParent: any, argArguments: any) {
 			console.log("GETTING USER BY ID...");
-			const constSelectedUser = constFakeUserDatabaseTable.filter((currentUser) => currentUser.fieldUserId === argArguments.argUserId);
-			if (constSelectedUser.length === 0) {
+			const arraySelectedUser = arrayFakeUsersDatabaseTable.filter((currentUser) => currentUser.fieldUserId === argArguments.argUserId);
+			if (arraySelectedUser.length === 0) {
 				return null;
 			}
-			if (constSelectedUser.length > 1) {
+			if (arraySelectedUser.length > 1) {
 				throw "MORE THAN ONE USER WITH THE SAME ID";
 			}
-			return constSelectedUser[0];
+			return arraySelectedUser[0];
 		},
 
 		// eslint-disable-next-line @typescript-eslint/no-explicit-any
 		readLoggedUser: function (argParent: any, argArguments: any, argContext: any) {
 			console.log("GETTING LOGGED USER...");
-			const constSelectedUser = constFakeUserDatabaseTable.filter((currentUser) => currentUser.fieldUserId === argContext.User.LoggedId);
-			if (constSelectedUser.length === 0) {
+			const arraySelectedUser = arrayFakeUsersDatabaseTable.filter((currentUser) => currentUser.fieldUserId === argContext.User.LoggedId);
+			if (arraySelectedUser.length === 0) {
 				return null;
 			}
-			if (constSelectedUser.length > 1) {
+			if (arraySelectedUser.length > 1) {
 				throw "MORE THAN ONE USER WITH THE SAME ID";
 			}
-			return constSelectedUser[0];
+			return arraySelectedUser[0];
 		},
 	},
 
@@ -44,39 +44,39 @@ const constResolvers = {
 		createUser: function (argParent: any, argArguments: any) {
 			console.log("CREATING USER...");
 			console.log("ARGUMENTS:", argArguments);
-			const constUserIds = constFakeUserDatabaseTable.map((currentUser) => currentUser.fieldUserId);
-			const constNextId = Math.max(...constUserIds) + 1;
-			const constNewUser = {
-				fieldUserId: constNextId,
+			const arrayUserIds = arrayFakeUsersDatabaseTable.map((currentUser) => currentUser.fieldUserId);
+			const numberNextId = Math.max(...arrayUserIds) + 1;
+			const objectNewUser = {
+				fieldUserId: numberNextId,
 				...argArguments.argData,
 			};
-			constFakeUserDatabaseTable.push(constNewUser);
-			return constNewUser;
+			arrayFakeUsersDatabaseTable.push(objectNewUser);
+			return objectNewUser;
 		},
 
 		// eslint-disable-next-line @typescript-eslint/no-explicit-any
 		updateUser: function (argParent: any, argArguments: any) {
 			console.log("UPDATING USER...");
 			console.log("ARGUMENTS:", argArguments);
-			const constIndex = constFakeUserDatabaseTable.findIndex((currentUser) => currentUser.fieldUserId === argArguments.argData.parUserId);
-			if (constIndex === -1) {
+			const numberIndex = arrayFakeUsersDatabaseTable.findIndex((currentUser) => currentUser.fieldUserId === argArguments.argData.parUserId);
+			if (numberIndex === -1) {
 				return null;
 			}
-			constFakeUserDatabaseTable[constIndex] = {
-				...constFakeUserDatabaseTable[constIndex],
+			arrayFakeUsersDatabaseTable[numberIndex] = {
+				...arrayFakeUsersDatabaseTable[numberIndex],
 				...argArguments.argData,
 			};
-			return constFakeUserDatabaseTable[constIndex];
+			return arrayFakeUsersDatabaseTable[numberIndex];
 		},
 
 		// eslint-disable-next-line @typescript-eslint/no-explicit-any
 		deleteUser: function (argParent: any, argArguments: any) {
 			console.log("ARGUMENT:", argArguments);
-			const constIndex = constFakeUserDatabaseTable.findIndex((currentUser) => currentUser.fieldUserId === argArguments.argData.parUserId);
-			if (constIndex === -1) {
+			const numberIndex = arrayFakeUsersDatabaseTable.findIndex((currentUser) => currentUser.fieldUserId === argArguments.argData.parUserId);
+			if (numberIndex === -1) {
 				return null;
 			}
-			const constReturn = constFakeUserDatabaseTable.splice(constIndex, 1);
+			const constReturn = arrayFakeUsersDatabaseTable.splice(numberIndex, 1);
 			return constReturn[0];
 		},
 	},
