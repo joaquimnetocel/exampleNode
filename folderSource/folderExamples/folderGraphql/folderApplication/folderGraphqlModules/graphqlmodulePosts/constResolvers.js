@@ -9,8 +9,7 @@ const arrayFakePostsDatabaseTable = [
 
 const constResolvers = {
 	Query: {
-		// eslint-disable-next-line @typescript-eslint/no-explicit-any
-		readPosts: async function (argParent: any, argArguments: any) {
+		readPosts: async function (argParent, argArguments) {
 			if (argArguments.where === undefined) {
 				return arrayFakePostsDatabaseTable;
 			}
@@ -22,8 +21,7 @@ const constResolvers = {
 	},
 
 	typeUser: {
-		// eslint-disable-next-line @typescript-eslint/no-explicit-any
-		readPosts: function (argParent: any, argArguments: any) {
+		readPosts: function (argParent, argArguments) {
 			console.log("argParent:", argParent);
 			console.log("argArguments:", argArguments);
 			if (argArguments.where === undefined) {

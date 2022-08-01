@@ -13,7 +13,7 @@ const constResolvers = {
 		},
 
 		// eslint-disable-next-line @typescript-eslint/no-explicit-any
-		readUser: function (argParent: any, argArguments: any) {
+		readUser: function (argParent, argArguments) {
 			console.log("GETTING USER BY ID...");
 			const arraySelectedUser = arrayFakeUsersDatabaseTable.filter((currentUser) => currentUser.fieldUserId === argArguments.argUserId);
 			if (arraySelectedUser.length === 0) {
@@ -26,7 +26,7 @@ const constResolvers = {
 		},
 
 		// eslint-disable-next-line @typescript-eslint/no-explicit-any
-		readLoggedUser: function (argParent: any, argArguments: any, argContext: any) {
+		readLoggedUser: function (argParent, argArguments, argContext) {
 			console.log("GETTING LOGGED USER...");
 			const arraySelectedUser = arrayFakeUsersDatabaseTable.filter((currentUser) => currentUser.fieldUserId === argContext.User.LoggedId);
 			if (arraySelectedUser.length === 0) {
@@ -41,7 +41,7 @@ const constResolvers = {
 
 	Mutation: {
 		// eslint-disable-next-line @typescript-eslint/no-explicit-any
-		createUser: function (argParent: any, argArguments: any) {
+		createUser: function (argParent, argArguments) {
 			console.log("CREATING USER...");
 			console.log("ARGUMENTS:", argArguments);
 			const arrayUserIds = arrayFakeUsersDatabaseTable.map((currentUser) => currentUser.fieldUserId);
@@ -55,7 +55,7 @@ const constResolvers = {
 		},
 
 		// eslint-disable-next-line @typescript-eslint/no-explicit-any
-		updateUser: function (argParent: any, argArguments: any) {
+		updateUser: function (argParent, argArguments) {
 			console.log("UPDATING USER...");
 			console.log("ARGUMENTS:", argArguments);
 			const numberIndex = arrayFakeUsersDatabaseTable.findIndex((currentUser) => currentUser.fieldUserId === argArguments.argData.parUserId);
@@ -70,7 +70,7 @@ const constResolvers = {
 		},
 
 		// eslint-disable-next-line @typescript-eslint/no-explicit-any
-		deleteUser: function (argParent: any, argArguments: any) {
+		deleteUser: function (argParent, argArguments) {
 			console.log("ARGUMENT:", argArguments);
 			const numberIndex = arrayFakeUsersDatabaseTable.findIndex((currentUser) => currentUser.fieldUserId === argArguments.argData.parUserId);
 			if (numberIndex === -1) {

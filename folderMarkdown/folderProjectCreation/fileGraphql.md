@@ -27,5 +27,5 @@ GRAPHQL IS A QUERY LANGUAGE AND RUNTIME FOR APIs AND GRAPHQL PLAYGROUND IS A GRA
 * RUN THE EXAMPLE:
   
   ```bash
-  npm run tsc-nodemon --jsfile=./folderDist/folderExamples/folderGraphql/exampleGraphql.js
+  npx nodemon ./folderSource/folderExamples/folderGraphql/exampleGraphql.js
   ```
