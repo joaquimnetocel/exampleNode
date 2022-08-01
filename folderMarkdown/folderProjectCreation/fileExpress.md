@@ -18,7 +18,7 @@
   npm install -D @types/express
   ```
 
-## EXAMPLE: BASIC EXAMPLE
+## EXAMPLE (BASIC EXAMPLE)
 
 * CREATE [_exampleExpress.js_](../../folderSource/folderExamples/exampleExpress.js) IN _folderExample_.
 * RUN THE EXAMPLE:
@@ -29,7 +29,7 @@
 
   ![REQUEST AND RESPONSE IMAGE](./fileRequestAndResponseImage.png)
 
-## EXAMPLE: URL PARAMETERS
+## EXAMPLE (URL PARAMETERS)
 
 * CREATE [_exampleUrlParameters.js_](../../folderSource/folderExamples/exampleUrlParameters.js) IN _folderExample_.
 * RUN THE EXAMPLE:
@@ -76,13 +76,23 @@
     npx nodemon ./folderSource/folderExamples/exampleEjs.js
     ```
 
-## EXAMPLE: MIDDLEWARES
+## EXAMPLE (MIDDLEWARES)
 
 * CREATE [_exampleMiddlewares.js_](../../folderSource/folderExamples/exampleMiddlewares.js) IN _folderExamples_.
 * RUN THE EXAMPLE:
   
   ```bash
   npx nodemon ./folderSource/folderExamples/exampleMiddlewares.js
+  ```
+
+## EXAMPLE (ROUTERS)
+
+* CREATE FOLDER _folderRouter_ in _folderExamples_.
+* CREATE ALL FILES IN _folderRouter_.
+* RUN THE EXAMPLE:
+  
+  ```bash
+  npx nodemon ./folderSource/folderExamples/folderRouter/exampleRouter.js
   ```
 
 ## _CORS_ CROSS-ORIGIN RESOURCE SHARING
