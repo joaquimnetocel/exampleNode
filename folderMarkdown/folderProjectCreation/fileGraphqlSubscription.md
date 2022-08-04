@@ -15,3 +15,19 @@ npm install ws
 npm install graphql-ws
 npm install graphql-subscriptions
 ```
+
+* INSTALL ALTAIR CLIENT:
+
+```bash
+npm install altair-express-middleware
+```
+
+## EXAMPLE (_GRAPHQL_ WITH SUBSCRIPTIONS)
+
+* CREATE FOLDER _folderGraphqlSubscription_ IN _folderExamples_.
+* CREATE ALL FILES IN _folderGraphqlSubscription_.
+* RUN THE EXAMPLE:
+  
+  ```bash
+  npx nodemon ./folderSource/folderExamples/folderGraphqlSubscription/exampleGraphqlSubscription.js
+  ```

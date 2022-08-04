@@ -13,7 +13,8 @@ import { moduleApplication } from "./folderApplication/moduleApplication.js";
 
 // ROUTERS
 import { routerGraphql } from "./routerGraphql.js";
-import { routerGraphqlPlayground } from "./routerGraphqlPlayground.js";
+// import { routerGraphqlPlayground } from "./routerGraphqlPlayground.js";
+import { routerAltair } from "./routerAltair.js";
 /////
 
 // EXPRESS
@@ -26,12 +27,12 @@ constExpress.use(cors({ origin: "*" }));
 
 // ROUTES
 constExpress.use("/routeGraphql", routerGraphql);
-constExpress.use("/routeGraphqlPlayground", routerGraphqlPlayground);
+constExpress.use("/routeAltair", routerAltair);
 /////
 
 // SERVER
-// const constServer = createServer(constExpress);
-const constServer = constExpress.listen(8081, () => {
+const constServer = createServer(constExpress);
+constServer.listen(8081, () => {
 	const functionSetSubscriptions = function () {
 		const constWebSocketServer = new WebSocketServer({
 			server: constServer,
@@ -50,6 +51,7 @@ const constServer = constExpress.listen(8081, () => {
 
 	console.log("SERVER RUNNING WITH THE FOLLOWING ROUTES:");
 	console.log("* http://localhost:8081/routeGraphql");
-	console.log("* http://localhost:8081/routeGraphqlPlayground");
+	// console.log("* http://localhost:8081/routeGraphqlPlayground");
+	console.log("* http://localhost:8081/routeAltair");
 });
 /////

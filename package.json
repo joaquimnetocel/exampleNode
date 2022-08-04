@@ -36,6 +36,7 @@
 	},
 	"dependencies": {
 		"@prisma/client": "^4.1.1",
+		"altair-express-middleware": "^4.5.3",
 		"cors": "^2.8.5",
 		"cross-env": "^7.0.3",
 		"dotenv": "^16.0.1",
@@ -43,6 +44,9 @@
 		"express": "^4.18.1",
 		"express-graphql": "^0.12.0",
 		"graphql-modules": "^2.1.0",
-		"graphql-playground-html": "^1.6.30"
+		"graphql-playground-html": "^1.6.30",
+		"graphql-subscriptions": "^2.0.0",
+		"graphql-ws": "^5.9.1",
+		"ws": "^8.8.1"
 	}
 }
