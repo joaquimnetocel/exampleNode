@@ -7,10 +7,10 @@ import { constTypedefs } from "./constTypedefs.js";
 import { constResolvers } from "./constResolvers.js";
 /////
 
-const graphqlmoduleSubscription = createModule({
-	id: "graphqlmoduleSubscription",
+const graphqlmoduleSubscriptions = createModule({
+	id: "graphqlmoduleSubscriptions",
 	typeDefs: [constTypedefs],
 	resolvers: [constResolvers],
 });
 
-export { graphqlmoduleSubscription };
+export { graphqlmoduleSubscriptions };

@@ -1,5 +1,5 @@
 // MODULES
-import { modulePubsub } from "./modulePubsub.js";
+import { modulePubsub } from "./modulePubSub.js";
 /////
 
 const constResolvers = {

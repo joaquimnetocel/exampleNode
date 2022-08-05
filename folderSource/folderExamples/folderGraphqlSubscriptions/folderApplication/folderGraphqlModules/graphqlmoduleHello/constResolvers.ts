@@ -4,7 +4,7 @@ const constResolvers = {
 			return "Hello guys!";
 		},
 		// eslint-disable-next-line @typescript-eslint/no-explicit-any
-		queryHello: function (argParent, argArguments) {
+		queryHello: function (argParent: any, argArguments: any) {
 			return `Hello ${argArguments.argName}!`;
 		},
 	},
@@ -14,7 +14,7 @@ const constResolvers = {
 			return "Hello guys!";
 		},
 		// eslint-disable-next-line @typescript-eslint/no-explicit-any
-		mutationHello: function (argParent, argArguments) {
+		mutationHello: function (argParent: any, argArguments: any) {
 			return `Hello ${argArguments.argName}!`;
 		},
 	},

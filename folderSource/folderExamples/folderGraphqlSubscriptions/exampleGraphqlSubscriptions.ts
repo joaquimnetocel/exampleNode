@@ -12,8 +12,7 @@ import { moduleApplication } from "./folderApplication/moduleApplication.js";
 
 // ROUTERS
 import { routerGraphql } from "./routerGraphql.js";
-// import { routerGraphqlPlayground } from "./routerGraphqlPlayground.js";
-import { routerAltair } from "./routerAltair.js";
+import { routerAltairGraphqlClient } from "./routerAltairGraphqlClient.js";
 /////
 
 // EXPRESS
@@ -26,7 +25,7 @@ constExpress.use(cors({ origin: "*" }));
 
 // ROUTES
 constExpress.use("/routeGraphql", routerGraphql);
-constExpress.use("/routeAltair", routerAltair);
+constExpress.use("/routeAltairGraphqlClient", routerAltairGraphqlClient);
 /////
 
 // SERVER
@@ -50,7 +49,6 @@ constServer.listen(8081, () => {
 
 	console.log("SERVER RUNNING WITH THE FOLLOWING ROUTES:");
 	console.log("* http://localhost:8081/routeGraphql");
-	// console.log("* http://localhost:8081/routeGraphqlPlayground");
-	console.log("* http://localhost:8081/routeAltair");
+	console.log("* http://localhost:8081/routeAltairGraphqlClient/?parAuthorization=12345");
 });
 /////

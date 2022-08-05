@@ -1,12 +1,12 @@
 // NPM MODULES
-import type { Request, Response, NextFunction } from "express";
-import { Router, static as expressStatic } from "express";
+import { Router, static as expressStatic, Request, Response, NextFunction } from "express";
 import { getDistDirectory, renderAltair, RenderOptions } from "altair-static";
 /////
 
 // CONSTANTS
 const stringEndPointUrl = "http://localhost:8081/routeGraphql";
 const stringSubscriptionEndpoint = "ws://localhost:8081/routeGraphql";
+/////
 
 // MIDDLEWARES
 const middlewareTrailingSlash = function (req: Request, res: Response, next: NextFunction) {
@@ -35,17 +35,14 @@ const middlewareInitialHeaders = function (req: Request, res: Response, next: Ne
 };
 /////
 
-// ROUTER
-const routerAltair = Router({
-	strict: false, //// Disable strict routing since we *need* to make sure the route does not end with a trailing slash
+//ROUTER
+const routerAltairGraphqlClient = Router({
+	strict: false, // Disable strict routing since we *need* to make sure the route does not end with a trailing slash
 });
-routerAltair.use(middlewareTrailingSlash);
-routerAltair.use(middlewareInitialHeaders);
-routerAltair.use(expressStatic(getDistDirectory()));
 /////
 
 // ROUTES
-routerAltair.get("/", (req, res) => {
+routerAltairGraphqlClient.get("/", [middlewareTrailingSlash, middlewareInitialHeaders], (req: Request, res: Response) => {
 	const stringAltair = renderAltair({
 		...res.locals.objectInitialHeaders,
 		endpointURL: stringEndPointUrl,
@@ -64,16 +61,19 @@ routerAltair.get("/", (req, res) => {
 			{
 				...res.locals.objectInitialHeaders,
 				initialName: "PUBLISH EXAMPLE",
-				endpointURL: "http://localhost:8081/routeGraphql",
-				subscriptionsEndpoint: "ws://localhost:8081/routeGraphql",
+				endpointURL: stringEndPointUrl,
+				subscriptionsEndpoint: stringSubscriptionEndpoint,
 				initialQuery: "query { publishMessage }",
 				initialSubscriptionsProvider: "graphql-ws",
 			},
 		],
 	});
 
-	return res.send(stringAltair);
+	res.send(stringAltair);
 });
+
+//STATIC
+routerAltairGraphqlClient.use(expressStatic(getDistDirectory()));
 /////
 
-export { routerAltair };
+export { routerAltairGraphqlClient };

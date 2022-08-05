@@ -30,5 +30,5 @@ npm install altair-static
 * RUN THE EXAMPLE:
   
   ```bash
-  npx nodemon ./folderSource/folderExamples/folderGraphqlSubscription/exampleGraphqlSubscription.js
+  npm run esbuild-nodemon --jsfile=./folderDist/folderExamples/folderGraphqlSubscriptions/exampleGraphqlSubscriptions.js
   ```

@@ -32,8 +32,7 @@ routerGraphqlPlayground.use("/", function (req, res) {
 	};
 	const constPlayground = functionGetPlayground();
 
-	res.write(constPlayground);
-	res.end();
+	res.send(constPlayground);
 });
 /////
 
