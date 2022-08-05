@@ -4,7 +4,6 @@ import { createServer } from "http";
 import cors from "cors";
 import { WebSocketServer } from "ws";
 import { useServer } from "graphql-ws/lib/use/ws";
-
 /////
 
 // MODULE USED HERE TO SET SUBSCRIPTIONS

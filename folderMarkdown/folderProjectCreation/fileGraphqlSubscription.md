@@ -12,6 +12,7 @@ _SUBSCRIPTIONS_ ARE USEFUL FOR NOTIFYING YOUR CLIENT IN REAL TIMA ABOUT CHANGES 
 
 ```bash
 npm install ws
+npm iinstall -D @types/ws # ONLY IF WORKING WITH TYPESCRIPT
 npm install graphql-ws
 npm install graphql-subscriptions
 ```
@@ -19,7 +20,7 @@ npm install graphql-subscriptions
 * INSTALL ALTAIR CLIENT:
 
 ```bash
-npm install altair-express-middleware
+npm install altair-static
 ```
 
 ## EXAMPLE (_GRAPHQL_ WITH SUBSCRIPTIONS)
