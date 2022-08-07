@@ -4,8 +4,7 @@ import { gql } from "graphql-modules";
 
 const constTypedefs = gql`
 	type Query {
-		queryHelloGuys: String!
-		queryHello(argName: String!): String!
+		queryHelloGuys(argChannelIdentifier: Int!): String!
 	}
 `;
 

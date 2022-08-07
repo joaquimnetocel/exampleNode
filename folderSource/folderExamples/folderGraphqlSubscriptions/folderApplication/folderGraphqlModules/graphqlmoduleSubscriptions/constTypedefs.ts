@@ -3,11 +3,12 @@ import { gql } from "graphql-modules";
 /////
 
 const constTypedefs = gql`
-	extend type Query {
-		publishMessage: String
+	type typeMessageMessage {
+		Author: String
+		Text: String
 	}
 	type Subscription {
-		subscriptionMessage: String
+		subscribeMessage(argChannelIdentifier: Int!): typeMessageMessage
 	}
 `;
 

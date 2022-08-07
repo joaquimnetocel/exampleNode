@@ -16,7 +16,7 @@ routerGraphql.use(
 	"/",
 	// eslint-disable-next-line @typescript-eslint/no-explicit-any
 	graphqlHTTP(function (req: any, res: any) {
-		console.log("abcde", req.headers.authorization);
+		console.log("Authorization:", req.headers.authorization);
 		res.locals.User = { LoggedId: 1 };
 		return {
 			schema: moduleApplication.schema,

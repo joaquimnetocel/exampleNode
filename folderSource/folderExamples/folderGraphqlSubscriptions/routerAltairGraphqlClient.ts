@@ -47,7 +47,7 @@ routerAltairGraphqlClient.get("/", [middlewareTrailingSlash, middlewareInitialHe
 		...res.locals.objectInitialHeaders,
 		endpointURL: stringEndPointUrl,
 		subscriptionsEndpoint: stringSubscriptionEndpoint,
-		initialQuery: `query{ queryHelloGuys }`,
+		initialQuery: `subscription{ subscribeMessage(argChannelIdentifier:23){Author, Text} }`,
 		initialSubscriptionsProvider: "graphql-ws",
 		initialWindows: [
 			{
@@ -55,7 +55,7 @@ routerAltairGraphqlClient.get("/", [middlewareTrailingSlash, middlewareInitialHe
 				initialName: "SUBSCRIPTION EXAMPLE",
 				endpointURL: stringEndPointUrl,
 				subscriptionsEndpoint: stringSubscriptionEndpoint,
-				initialQuery: "subscription { subscriptionMessage }",
+				initialQuery: "subscription{ subscribeMessage(argChannelIdentifier:23){Author, Text} }",
 				initialSubscriptionsProvider: "graphql-ws",
 			},
 			{
@@ -63,7 +63,7 @@ routerAltairGraphqlClient.get("/", [middlewareTrailingSlash, middlewareInitialHe
 				initialName: "PUBLISH EXAMPLE",
 				endpointURL: stringEndPointUrl,
 				subscriptionsEndpoint: stringSubscriptionEndpoint,
-				initialQuery: "query { publishMessage }",
+				initialQuery: "query { queryHelloGuys(argChannelIdentifier:23) }",
 				initialSubscriptionsProvider: "graphql-ws",
 			},
 		],
