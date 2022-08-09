@@ -3,7 +3,7 @@ import { modulePubsub } from "../modulePubsub.js";
 import { stringChannelExample } from "../modulePubsubChannels.js";
 /////
 
-const constResolvers = {
+const objectResolvers = {
 	// Subscription: {
 	// 	subscriptionMessage: {
 	// 		subscribe: () => {
@@ -23,4 +23,4 @@ const constResolvers = {
 	},
 };
 
-export { constResolvers };
+export { objectResolvers };

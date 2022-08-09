@@ -3,14 +3,14 @@ import { createModule } from "graphql-modules";
 /////
 
 // MODULES
-import { constTypedefs } from "./constTypedefs.js";
-import { constResolvers } from "./constResolvers.js";
+import { gqlTypedefs } from "./gqlTypedefs.js";
+import { objectResolvers } from "./objectResolvers.js";
 /////
 
 const graphqlmoduleHello = createModule({
 	id: "graphqlmoduleHello",
-	typeDefs: [constTypedefs],
-	resolvers: [constResolvers],
+	typeDefs: [gqlTypedefs],
+	resolvers: [objectResolvers],
 });
 
 export { graphqlmoduleHello };

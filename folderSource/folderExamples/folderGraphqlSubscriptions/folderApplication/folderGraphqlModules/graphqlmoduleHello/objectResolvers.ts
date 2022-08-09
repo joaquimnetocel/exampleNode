@@ -3,7 +3,7 @@ import { modulePubsub } from "../modulePubsub.js";
 import { stringChannelExample } from "../modulePubsubChannels.js";
 /////
 
-const constResolvers = {
+const objectResolvers = {
 	Query: {
 		// eslint-disable-next-line @typescript-eslint/no-explicit-any
 		queryHelloGuys: function (argParent: any, argArgument: any) {
@@ -19,4 +19,4 @@ const constResolvers = {
 	},
 };
 
-export { constResolvers };
+export { objectResolvers };

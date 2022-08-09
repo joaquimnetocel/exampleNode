@@ -2,7 +2,7 @@
 import { gql } from "graphql-modules";
 /////
 
-const constTypedefs = gql`
+const gqlTypedefs = gql`
 	extend type Query {
 		readPosts(where: inputWhere): [typePost!]!
 	}
@@ -24,4 +24,4 @@ const constTypedefs = gql`
 	}
 `;
 
-export { constTypedefs };
+export { gqlTypedefs };

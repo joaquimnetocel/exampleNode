@@ -2,10 +2,10 @@
 import { gql } from "graphql-modules";
 /////
 
-const constTypedefs = gql`
+const gqlTypedefs = gql`
 	type Query {
 		queryHelloGuys(argChannelIdentifier: Int!): String!
 	}
 `;
 
-export { constTypedefs };
+export { gqlTypedefs };

@@ -7,7 +7,7 @@ const arrayFakePostsDatabaseTable = [
 ];
 /////
 
-const constResolvers = {
+const objectResolvers = {
 	Query: {
 		readPosts: async function (argParent, argArguments) {
 			if (argArguments.where === undefined) {
@@ -38,4 +38,4 @@ const constResolvers = {
 	},
 };
 
-export { constResolvers };
+export { objectResolvers };

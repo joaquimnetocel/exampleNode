@@ -5,7 +5,7 @@ const arrayFakeUsersDatabaseTable = [
 ];
 /////
 
-const constResolvers = {
+const objectResolvers = {
 	Query: {
 		readUsers: function () {
 			console.log("GETTING ALL USERS...");
@@ -82,4 +82,4 @@ const constResolvers = {
 	},
 };
 
-export { constResolvers };
+export { objectResolvers };

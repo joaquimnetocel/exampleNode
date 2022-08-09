@@ -2,7 +2,7 @@
 import { gql } from "graphql-modules";
 /////
 
-const constTypedefs = gql`
+const gqlTypedefs = gql`
 	extend type Query {
 		readUsers: [typeUser!]!
 		readUser(argUserId: Int!): typeUser
@@ -35,4 +35,4 @@ const constTypedefs = gql`
 	}
 `;
 
-export { constTypedefs };
+export { gqlTypedefs };

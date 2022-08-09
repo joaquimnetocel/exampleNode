@@ -2,7 +2,7 @@
 import { gql } from "graphql-modules";
 /////
 
-const constTypedefs = gql`
+const gqlTypedefs = gql`
 	type typeMessageMessage {
 		Author: String
 		Text: String
@@ -12,4 +12,4 @@ const constTypedefs = gql`
 	}
 `;
 
-export { constTypedefs };
+export { gqlTypedefs };

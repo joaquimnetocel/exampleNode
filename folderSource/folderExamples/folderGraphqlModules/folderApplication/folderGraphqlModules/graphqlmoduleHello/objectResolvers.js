@@ -1,4 +1,4 @@
-const constResolvers = {
+const objectResolvers = {
 	Query: {
 		queryHelloGuys: function () {
 			return "Hello guys!";
@@ -20,4 +20,4 @@ const constResolvers = {
 	},
 };
 
-export { constResolvers };
+export { objectResolvers };

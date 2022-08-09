@@ -2,7 +2,7 @@
 import { gql } from "graphql-modules";
 /////
 
-const constTypedefs = gql`
+const gqlTypedefs = gql`
 	type Query {
 		queryHelloGuys: String!
 		queryHello(argName: String!): String!
@@ -13,4 +13,4 @@ const constTypedefs = gql`
 	}
 `;
 
-export { constTypedefs };
+export { gqlTypedefs };
