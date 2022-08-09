@@ -17,7 +17,7 @@
 		"studio": "prisma studio --schema=./prisma/schema.prisma",
 		"tsc-dev": "cross-env dotenvDevelopmentMode=true npm run tsc-nodemon --jsfile=./folderDist/index.js\"",
 		"esbuild-dev": "cross-env dotenvDevelopmentMode=true npm run esbuild-nodemon --jsfile=./folderDist/index.js\"",
-		"codegen": "graphql-codegen --config ./folderSource/folderExamples/folderCodegen/folderApplication/folderCodegenConfigurations/codegen.yml",
+		"codegen": "graphql-codegen --config ./folderSource/folderExamples/folderGraphqlCodegen/folderApplication/folderCodegenConfigurations/codegen.yml",
 		"test": "echo \"Error: no test specified\" && exit 1"
 	},
 	"keywords": [],

@@ -1,8 +1,8 @@
 overwrite: true
-schema: "./folderSource/folderExamples/folderCodegen/folderApplication/folderGraphqlModules/**/*.ts" #"http://localhost:8081/apiLogged/apiGraphql"
+schema: "./folderSource/folderExamples/folderGraphqlCodegen/folderApplication/folderGraphqlModules/**/*.ts" #"http://localhost:8081/apiLogged/apiGraphql"
 documents: null
 generates:
-  ./folderSource/folderExamples/folderCodegen/folderApplication/folderGraphqlModules:
+  ./folderSource/folderExamples/folderGraphqlCodegen/folderApplication/folderGraphqlModules:
     preset: graphql-modules
     presetConfig:
       baseTypesPath: ../folderCodegenConfigurations/fileGeneratedCompleteCodegenTypes.ts # Where to create the complete schema types

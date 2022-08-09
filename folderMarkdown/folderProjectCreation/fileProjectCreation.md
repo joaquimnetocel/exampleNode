@@ -77,7 +77,7 @@
 
 * GRAPHQL WITH SUBSCRIPTIONS (INSTRUCTIONS [HERE](./fileGraphqlSubscriptions.md)).
 
-* CODEGEN (INSTRUCTIONS [HERE](./fileCodegen.md)).
+* GRAPHQL CODEGENERATOR (INSTRUCTIONS [HERE](./fileGraphqlCodegen.md)).
 
 ## PROJECT MAIN CODE
 
