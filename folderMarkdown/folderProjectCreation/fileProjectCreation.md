@@ -77,6 +77,8 @@
 
 * GRAPHQL WITH SUBSCRIPTIONS (INSTRUCTIONS [HERE](./fileGraphqlSubscriptions.md)).
 
+* CODEGEN (INSTRUCTIONS [HERE](./fileCodegen.md)).
+
 ## PROJECT MAIN CODE
 
 * CREATE [_index.ts_](../../folderSource/index.ts) IN _folderSource_.
