@@ -9,7 +9,7 @@ const objectResolvers: GraphqlmoduleHelloModule.Resolvers = {
 		},
 		queryHello: function (argParent, argArguments, argContext) {
 			console.log(argContext.User?.LoggedId);
-			return "Hello guys!";
+			return `Hello ${argArguments.argName}!`;
 		},
 	},
 };
