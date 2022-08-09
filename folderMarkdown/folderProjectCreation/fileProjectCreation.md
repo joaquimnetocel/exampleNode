@@ -73,11 +73,11 @@
 
 * _PRISMA_ (INSTRUCTIONS [HERE](./filePrisma.md)).
 
-* GRAPHQL (INSTRUCTIONS [HERE](./fileGraphql.md)).
+* GRAPHQL MODULES (INSTRUCTIONS [HERE](./fileGraphqlModules.md)).
 
 * GRAPHQL WITH SUBSCRIPTIONS (INSTRUCTIONS [HERE](./fileGraphqlSubscriptions.md)).
 
-* GRAPHQL CODEGENERATOR (INSTRUCTIONS [HERE](./fileGraphqlCodegen.md)).
+* GRAPHQL CODEGEN (INSTRUCTIONS [HERE](./fileGraphqlCodegen.md)).
 
 ## PROJECT MAIN CODE
 
