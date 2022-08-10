@@ -2,14 +2,16 @@
 
 ## DESCRIPTION
 
-[ESBUILD](https://esbuild.github.io/) IS A FAST TYPESCRIPT TO JAVASCRIPT TRANSPILER AND BUNDLER.
+INSTRUCTIONS TO CONFIGURE:
 
-## INSTALLATION
+* [ESBUILD](https://esbuild.github.io/): A FAST TYPESCRIPT TO JAVASCRIPT TRANSPILER AND BUNDLER.
 
-  ```bash
-  npm install -D esbuild
-  npm install -D esbuild-node-tsc
-  ```
+## REQUIRED PACKAGES
+
+```bash
+npm install -D esbuild
+npm install -D esbuild-node-tsc
+```
 
 ## CONFIGURATION
 
@@ -22,12 +24,8 @@
   "esbuild-nodemon": "nodemon --exec \"etsc --config=esbuild.development.config.cjs && node %npm_config_jsfile%\"",
   ```
 
-## EXAMPLE (HELLO WORLD WITH _ESBUILD_ AND _NODEMON_)
+## RUNNING AN EXAMPLE WITH ESBUILD
 
-* RUN THE EXAMPLE:
-
-  ```bash
-  npm run esbuild-nodemon --jsfile=./folderDist/folderExamples/exampleHelloWorld.js
-  ```
-
-[BACK](./fileProjectCreation.md)
+```bash
+npm run esbuild-nodemon --jsfile=./folderDist/folderExamples/folderHelloWorld/exampleHelloWorld.js
+```

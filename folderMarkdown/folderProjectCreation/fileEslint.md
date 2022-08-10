@@ -1,17 +1,20 @@
-# _ESLINT_ PACKAGE (CODE ANALYSIS TOOL)
+# _ESLINT_
 
 ## DESCRIPTION
 
-[ESLINT](https://eslint.org) IS A CODE ANALYSIS TOOL.
+INSTRUCTIONS TO CONFIGURE:
 
-## INSTALLATION
+* [ESLINT](https://eslint.org): A CODE ANALYSIS TOOL.
 
-* INSTALL THE [_ESLINT_ _VSCODE_ EXTENSION](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint).
-* INSTALL THE PACKAGE:
+## REQUIRED VSCODE EXTENSION
 
-  ```bash
-  npm install -D eslint
-  ```
+INSTALL THE [_ESLINT_ _VSCODE_ EXTENSION](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint).
+
+## REQUIRED PACKAGE
+
+```bash
+npm install -D eslint
+```
 
 ## CONFIGURATION
 
@@ -57,5 +60,3 @@ npm init @eslint/config # THIS IS GOING TO CREATE .eslintrc.json
   ```json
   "quotes": ["error", "double", { "allowTemplateLiterals": true }],
   ```
-
-[BACK](./fileProjectCreation.md)

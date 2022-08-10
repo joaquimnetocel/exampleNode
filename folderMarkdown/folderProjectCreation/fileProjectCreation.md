@@ -8,32 +8,9 @@
   Set-ExecutionPolicy RemoteSigned
   ```  
 
-## INSTRUCTIONS
+## GUIDELINES
 
-* CREATE FOLDERS:
-  * CREATE FOLDER _folderSource_.
-  * CREATE FOLDER _folderExamples_ IN _folderSource_.
-  * CREATE FOLDER _folderModules_ IN _folderSource_.
-  * CREATE FOLDER _folderViews_ IN _folderSource_.
-
-* EXAMPLE (HELLO WORLD WITH _NODE_):
-  * CREATE [_exampleHelloWorld.js_](../../folderSource/folderExamples/exampleHelloWorld.js) IN _folderExamples_.
-  * RUN THE EXAMPLE:
-
-    ```bash
-    node ./folderSource/folderExamples/exampleHelloWorld.js
-    ```
-
-* PRETTIER (INSTRUCTIONS [HERE](./filePrettier.md)).
-
-* CREATE A FIRST NPM SCRIPT.
-  * CREATE `npm run hello` COMMAND BY ADDING THE FOLLOWING LINE TO THE _script_ ENTRY IN [_package.json_](../package.json):
-
-    ```json
-    "hello": "node ./folderSource/folderExamples/exampleHelloWorld.js",
-    ```
-
-* CREATE [README.md](../../README.md).
+* ["HELLO WORLD"](/folderSource/folderExamples/folderHelloWorld/README.md)
 
 * INITIALIZE THE _NODE PACKAGE MANAGER_ (_NPM_):
 
@@ -41,47 +18,49 @@
   npm init -y # THIS IS GOING TO CREATE THE FILE package.json.
   ```
 
-* ENABLE ES6 IMPORTS/EXPORTS BY ADDING THE FOLLOWING LINE TO [_package.json_](../../package.json):
+* [_NODEMON_](/folderSource/folderExamples/folderNodemon/README.md)
 
-  ```json
-  "type": "module",
-  ```
+* [NPM SCRIPTS](/folderSource/folderExamples/folderNpmScripts/README.md)
 
-* _ESLINT_ PACKAGE (INSTRUCTIONS [HERE](./fileEslint.md)).
+* [_PRETTIER_](/folderMarkdown/folderProjectCreation/filePrettier.md))
 
-* _NODEMON_ PACKAGE (INSTRUCTIONS [HERE](./fileNodemon.md)).
+* CREATE [README.md](/README.md).
 
-* _GIT_ (INSTRUCTIONS [HERE](./fileGit.md)).
+* [_ESLINT_](./fileEslint.md)
 
-* EXAMPLE (_TEMPLATE STRINGS_ WITH _NODEMON_):
-  * CREATE [_exampleTemplateStrings.js_](../../folderSource/folderExamples/exampleTemplateStrings.js) IN _folderExamples_.
-  * RUN THE EXAMPLE:
+* [_GIT_](./fileGit.md)
 
-    ```bash
-    npx nodemon ./folderSource/folderExamples/exampleTemplateStrings.js
-    ```
+* [TEMPLATE STRINGS](/folderSource/folderExamples/folderTemplateStrings/README.md)
 
-* _DOTENV_ PACKAGE (INSTRUCTIONS [HERE](./fileDotenv.md)).
+* [ECMAScript MODULES (ESM)](/folderSource/folderExamples/folderEsm/README.md)
 
-* _EXPRESS_ PACKAGE (INSTRUCTIONS [HERE](./fileExpress.md))
+* [_DOTENV_](/folderSource/folderExamples/folderDotenv/README.md))
 
-* TYPESCRIPT (INSTRUCTIONS [HERE](./fileTypescript.md))
+* [_EXPRESS.JS_](/folderSource/folderExamples/folderExpress/README.md)
 
-* PATH ALIAS CONFIGURATION (INSTRUCTIONS [HERE](./filePathAlias.md)).
+* [_CORS_](/folderSource/folderExamples/folderCors/README.md)
 
-* _ESBUILD_ (INSTRUCTIONS [HERE](./fileEsbuild.md)).
+* [_EJS_](/folderSource/folderExamples/folderEjs/README.md)
 
-* _PRISMA_ (INSTRUCTIONS [HERE](./filePrisma.md)).
+* [_TYPESCRIPT_](./fileTypescript.md)
 
-* GRAPHQL MODULES (INSTRUCTIONS [HERE](./fileGraphqlModules.md)).
+* [PATH ALIAS](./filePathAlias.md)
 
-* GRAPHQL WITH SUBSCRIPTIONS (INSTRUCTIONS [HERE](./fileGraphqlSubscriptions.md)).
+* [_ESBUILD_](./fileEsbuild.md)
 
-* GRAPHQL CODEGEN (INSTRUCTIONS [HERE](./fileGraphqlCodegen.md)).
+* [_PRISMA_](./filePrisma.md)
+
+* [_GRAPHQL_](/folderSource/folderExamples/folderGraphql/README.md)
+
+* [GRAPHQL MODULES](./fileGraphqlModules.md)
+
+* [GRAPHQL WITH SUBSCRIPTIONS](./fileGraphqlSubscriptions.md)
+
+* [GRAPHQL CODEGEN](./fileGraphqlCodegen.md)
 
 ## PROJECT MAIN CODE
 
-* CREATE [_index.ts_](../../folderSource/index.ts) IN _folderSource_.
+* CREATE [_index.ts_](/folderSource/index.ts) IN _folderSource_.
 * INSTALL CROSSENV PACKAGE (RUN SCRIPTS THAT SET AND USE ENVIRONMENT VARIABLES ACROSS PLATFORMS):
 
   ```bash
