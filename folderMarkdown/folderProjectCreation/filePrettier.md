@@ -32,5 +32,3 @@ INSTALL THE [_PRETTIER_ _VSCODE_ EXTENSION](https://marketplace.visualstudio.com
 *.md
 *.yml
 ```
-
-[BACK](/folderMarkdown/folderProjectCreation/fileProjectCreation.md)

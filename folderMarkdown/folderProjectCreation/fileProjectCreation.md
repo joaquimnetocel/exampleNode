@@ -42,7 +42,7 @@
 
 * [_EJS_](/folderSource/folderExamples/folderEjs/README.md)
 
-* [_TYPESCRIPT_](./fileTypescript.md)
+* [_TYPESCRIPT_](/folderSource/folderExamples/folderTypescript/README.md)
 
 * [PATH ALIAS](./filePathAlias.md)
 
