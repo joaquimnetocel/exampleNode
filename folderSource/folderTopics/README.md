@@ -48,11 +48,11 @@
 
 * [_GRAPHQL_](/folderSource/folderTopics/folderGraphql/README.md)
 
-* [GRAPHQL MODULES](./fileGraphqlModules.md)
+* [GRAPHQL MODULES](/folderSource/folderTopics/folderGraphqlModules/README.md)
 
-* [GRAPHQL WITH SUBSCRIPTIONS](./fileGraphqlSubscriptions.md)
+* [GRAPHQL MODULES WITH SUBSCRIPTIONS](/folderSource/folderTopics/folderGraphqlSubscriptions/README.md)
 
-* [GRAPHQL CODEGEN](./fileGraphqlCodegen.md)
+* [GRAPHQL MODULES WITH SUBSCRIPTIONS AND CODEGEN](/folderSource/folderTopics/folderGraphqlCodegen/README.md)
 
 * [CROSSENV](/folderSource/folderTopics/folderCrossenv/README.md)
 

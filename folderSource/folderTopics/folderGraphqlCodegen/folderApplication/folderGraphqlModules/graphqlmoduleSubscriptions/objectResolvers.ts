@@ -15,15 +15,3 @@ const objectResolvers = {
 };
 
 export { objectResolvers };
-
-////////////////////////
-
-// Subscription: {
-// 	subscriptionMessage: {
-// 		subscribe: () => {
-// 			return {
-// 				[Symbol.asyncIterator]: () => modulePubsub.asyncIterator("MESSAGE_CHANNEL"),
-// 			};
-// 		},
-// 	},
-// },

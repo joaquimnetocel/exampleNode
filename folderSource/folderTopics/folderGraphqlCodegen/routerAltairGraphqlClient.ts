@@ -63,7 +63,7 @@ routerAltairGraphqlClient.get("/", [middlewareTrailingSlash, middlewareInitialHe
 				initialName: "PUBLISH EXAMPLE",
 				endpointURL: stringEndPointUrl,
 				subscriptionsEndpoint: stringSubscriptionEndpoint,
-				initialQuery: "query { queryHelloGuys(argChannelIdentifier:23) }",
+				initialQuery: "query { queryHelloWithSubscription(argChannelIdentifier:23) }",
 				initialSubscriptionsProvider: "graphql-ws",
 			},
 		],

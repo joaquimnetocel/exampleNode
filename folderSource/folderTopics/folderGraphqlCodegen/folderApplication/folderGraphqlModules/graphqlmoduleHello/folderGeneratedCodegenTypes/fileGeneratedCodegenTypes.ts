@@ -3,7 +3,7 @@ import * as Types from "../../../folderCodegenConfigurations/fileGeneratedComple
 import * as gm from "graphql-modules";
 export namespace GraphqlmoduleHelloModule {
   interface DefinedFields {
-    Query: 'queryHelloGuys' | 'queryHello';
+    Query: 'queryHelloGuys' | 'queryHello' | 'queryHelloWithSubscription';
   };
   
   export type Query = Pick<Types.Query, DefinedFields['Query']>;
@@ -22,6 +22,7 @@ export namespace GraphqlmoduleHelloModule {
       '*'?: gm.Middleware[];
       queryHelloGuys?: gm.Middleware[];
       queryHello?: gm.Middleware[];
+      queryHelloWithSubscription?: gm.Middleware[];
     };
   };
 }

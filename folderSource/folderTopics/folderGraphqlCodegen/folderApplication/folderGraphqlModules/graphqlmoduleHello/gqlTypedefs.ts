@@ -6,6 +6,7 @@ const gqlTypedefs = gql`
 	type Query {
 		queryHelloGuys: String!
 		queryHello(argName: String!): String!
+		queryHelloWithSubscription(argChannelIdentifier: Int!): String!
 	}
 `;
 

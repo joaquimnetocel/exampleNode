@@ -20,11 +20,33 @@ export type Query = {
   __typename?: 'Query';
   queryHello: Scalars['String'];
   queryHelloGuys: Scalars['String'];
+  queryHelloWithSubscription: Scalars['String'];
 };
 
 
 export type QueryQueryHelloArgs = {
   argName: Scalars['String'];
+};
+
+
+export type QueryQueryHelloWithSubscriptionArgs = {
+  argChannelIdentifier: Scalars['Int'];
+};
+
+export type Subscription = {
+  __typename?: 'Subscription';
+  subscribeMessage?: Maybe<TypeMessageMessage>;
+};
+
+
+export type SubscriptionSubscribeMessageArgs = {
+  argChannelIdentifier: Scalars['Int'];
+};
+
+export type TypeMessageMessage = {
+  __typename?: 'typeMessageMessage';
+  Author?: Maybe<Scalars['String']>;
+  Text?: Maybe<Scalars['String']>;
 };
 
 
@@ -97,23 +119,42 @@ export type DirectiveResolverFn<TResult = {}, TParent = {}, TContext = {}, TArgs
 /** Mapping between all available schema types and the resolvers types */
 export type ResolversTypes = {
   Boolean: ResolverTypeWrapper<Scalars['Boolean']>;
+  Int: ResolverTypeWrapper<Scalars['Int']>;
   Query: ResolverTypeWrapper<{}>;
   String: ResolverTypeWrapper<Scalars['String']>;
+  Subscription: ResolverTypeWrapper<{}>;
+  typeMessageMessage: ResolverTypeWrapper<TypeMessageMessage>;
 };
 
 /** Mapping between all available schema types and the resolvers parents */
 export type ResolversParentTypes = {
   Boolean: Scalars['Boolean'];
+  Int: Scalars['Int'];
   Query: {};
   String: Scalars['String'];
+  Subscription: {};
+  typeMessageMessage: TypeMessageMessage;
 };
 
 export type QueryResolvers<ContextType = interfaceCodegenContext, ParentType extends ResolversParentTypes['Query'] = ResolversParentTypes['Query']> = {
   queryHello?: Resolver<ResolversTypes['String'], ParentType, ContextType, RequireFields<QueryQueryHelloArgs, 'argName'>>;
   queryHelloGuys?: Resolver<ResolversTypes['String'], ParentType, ContextType>;
+  queryHelloWithSubscription?: Resolver<ResolversTypes['String'], ParentType, ContextType, RequireFields<QueryQueryHelloWithSubscriptionArgs, 'argChannelIdentifier'>>;
+};
+
+export type SubscriptionResolvers<ContextType = interfaceCodegenContext, ParentType extends ResolversParentTypes['Subscription'] = ResolversParentTypes['Subscription']> = {
+  subscribeMessage?: SubscriptionResolver<Maybe<ResolversTypes['typeMessageMessage']>, "subscribeMessage", ParentType, ContextType, RequireFields<SubscriptionSubscribeMessageArgs, 'argChannelIdentifier'>>;
+};
+
+export type TypeMessageMessageResolvers<ContextType = interfaceCodegenContext, ParentType extends ResolversParentTypes['typeMessageMessage'] = ResolversParentTypes['typeMessageMessage']> = {
+  Author?: Resolver<Maybe<ResolversTypes['String']>, ParentType, ContextType>;
+  Text?: Resolver<Maybe<ResolversTypes['String']>, ParentType, ContextType>;
+  __isTypeOf?: IsTypeOfResolverFn<ParentType, ContextType>;
 };
 
 export type Resolvers<ContextType = interfaceCodegenContext> = {
   Query?: QueryResolvers<ContextType>;
+  Subscription?: SubscriptionResolvers<ContextType>;
+  typeMessageMessage?: TypeMessageMessageResolvers<ContextType>;
 };
 
