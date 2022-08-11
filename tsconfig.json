@@ -2,8 +2,7 @@
 	"compilerOptions": {
 		"paths": {
 			"#pathJavascriptExamples/*": ["./folderSource/folderTopics/*"],
-			"#pathTypescriptExamples/*": ["./folderDist/folderTopics/*", "./folderSource/folderTopics/*"],
-			"#pathModules/*": ["./folderDist/folderModules/*", "./folderSource/folderModules/*"]
+			"#pathTypescriptExamples/*": ["./folderDist/folderTopics/*", "./folderSource/folderTopics/*"]
 		},
 
 		/* Visit https://aka.ms/tsconfig to read more about this file */

@@ -40,9 +40,9 @@
 
 * [_TYPESCRIPT_](/folderSource/folderTopics/folderTypescript/README.md)
 
-* [PATH ALIAS](./filePathAlias.md)
-
 * [_ESBUILD_](/folderSource/folderTopics/folderEsbuild/README.md)
+
+* [PATH ALIAS](/folderSource/folderTopics/folderPathAlias/README.md)
 
 * [_PRISMA_](./filePrisma.md)
 

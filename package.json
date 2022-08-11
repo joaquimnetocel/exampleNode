@@ -1,8 +1,7 @@
 {
 	"imports": {
 		"#pathJavascriptExamples/*": "./folderSource/folderTopics/*",
-		"#pathTypescriptExamples/*": "./folderDist/folderTopics/*",
-		"#pathModules/*": "./folderDist/folderModules/*"
+		"#pathTypescriptExamples/*": "./folderDist/folderTopics/*"
 	},
 	"type": "module",
 	"name": "examplenode",
