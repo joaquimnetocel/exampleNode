@@ -18,7 +18,7 @@ constExpress.get("/", function (req, res) {
 const constPort = 8081;
 const constServer = createServer(constExpress);
 constServer.listen(constPort, () => {
-	if (Boolean(process.env.dotenvDevelopmentMode) === true) {
+	if (process.env.dotenvDevelopmentMode === "true") {
 		console.log(`RUNNING ON DEVELOPMENT MODE!`);
 	} else {
 		console.log(`RUNNING ON PRODUCTION MODE!`);

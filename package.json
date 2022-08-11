@@ -14,9 +14,10 @@
 		"esbuild-nodemon": "nodemon --exec \"etsc --config=esbuild.development.config.cjs && node %npm_config_jsfile%\"",
 		"database": "prisma db push --schema=./prisma/schema.prisma && prisma generate --schema=./prisma/schema.prisma",
 		"studio": "prisma studio --schema=./prisma/schema.prisma",
+		"codegen": "graphql-codegen --config ./folderSource/folderTopics/folderGraphqlCodegen/folderApplication/folderCodegenConfigurations/codegen.yml",
+		"crossenv-example": "cross-env dotenvDevelopmentMode=true node ./folderSource/folderTopics/folderCrossenv/exampleCrossenv.js\"",
 		"tsc-dev": "cross-env dotenvDevelopmentMode=true npm run tsc-nodemon --jsfile=./folderDist/index.js\"",
 		"esbuild-dev": "cross-env dotenvDevelopmentMode=true npm run esbuild-nodemon --jsfile=./folderDist/index.js\"",
-		"codegen": "graphql-codegen --config ./folderSource/folderTopics/folderGraphqlCodegen/folderApplication/folderCodegenConfigurations/codegen.yml",
 		"test": "echo \"Error: no test specified\" && exit 1"
 	},
 	"keywords": [],

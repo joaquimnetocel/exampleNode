@@ -54,25 +54,4 @@
 
 * [GRAPHQL CODEGEN](./fileGraphqlCodegen.md)
 
-## PROJECT MAIN CODE
-
-* CREATE [_index.ts_](/folderSource/index.ts) IN _folderSource_.
-* INSTALL CROSSENV PACKAGE (RUN SCRIPTS THAT SET AND USE ENVIRONMENT VARIABLES ACROSS PLATFORMS):
-
-  ```bash
-  npm install cross-env
-  ```
-
-* CREATE `npm run tsc-dev` COMMAND BY ADDING THE FOLLOWING LINE TO THE _script_ ENTRY IN [_package.json_](../package.json):
-
-  ```json
-  "dev": "cross-env dotenvDevelopmentMode=true npm run tsc-nodemon --jsfile=./folderDist/index.js\"",
-  ```
-
-* CREATE `npm run esbuild-dev` COMMAND BY ADDING THE FOLLOWING LINE TO THE _script_ ENTRY IN [_package.json_](../package.json):
-
-  ```json
-  "esbuild-dev": "cross-env dotenvDevelopmentMode=true npm run esbuild-nodemon --jsfile=./folderDist/index.js\"",
-  ```
-
-[BACK](../../README.md)
+* [INDEX](/folderSource/folderTopics/folderIndex/README.md)
