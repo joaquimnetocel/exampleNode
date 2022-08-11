@@ -25,7 +25,7 @@ npm install graphql-ws
 npm install graphql-subscriptions
 ```
 
-* FOR ALTAIR CLIENT:
+* FOR ALTAIR GRAPHQL CLIENT:
 
 ```bash
 npm install altair-static

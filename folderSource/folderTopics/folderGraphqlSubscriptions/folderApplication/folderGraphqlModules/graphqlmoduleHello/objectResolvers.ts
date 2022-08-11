@@ -1,6 +1,6 @@
 // MODULES
-import { modulePubsub } from "../modulePubsub.js";
-import { stringChannelExample } from "../modulePubsubChannels.js";
+import { modulePubsub } from "../../modulePubsub.js";
+import { stringChannelExample } from "../../modulePubsubChannels.js";
 /////
 
 const objectResolvers = {

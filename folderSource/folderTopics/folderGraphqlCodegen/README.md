@@ -5,6 +5,8 @@
 EXAMPLE OF [_NODE.JS_](https://nodejs.org) USING:
 
 * [_GRAPHQL_ CODE GENERATOR (_GRAPHQL CODEGEN_)](https://www.graphql-code-generator.com) IS A TOOL THAT GENERATES CODE OUT OF YOUR GRAPHQL SCHEMA.
+* _GRAPHQL PLAYGROUND_: A GRAPHICAL, INTERACTIVE AND IN-BROWSER _GRAPHQL_ IDE.
+* [_ALTAIR GRAPHQL CLIENT_](https://altair.sirmuel.design/): A GRAPHICAL, INTERACTIVE AND IN-BROWSER _GRAPHQL_ IDE.
 
 ## PREREQUISITES
 
@@ -16,12 +18,26 @@ EXAMPLE OF [_NODE.JS_](https://nodejs.org) USING:
 
 ## REQUIRED PACKAGES
 
+* FOR CODEGEN:
+
 ```bash
 npm install -D @graphql-codegen/cli
 npm install -D @graphql-codegen/graphql-modules-preset
 npm install -D @graphql-codegen/typescript-resolvers
 npm install -D @graphql-codegen/typescript
 npm install -D @graphql-codegen/add
+```
+
+* FOR GRAPHQL PLAYGROUND:
+
+```bash
+npm install graphql-playground-html
+```
+
+* FOR ALTAIR GRAPHQL CLIENT:
+
+```bash
+npm install altair-static
 ```
 
 ## CONFIGURATIONS
