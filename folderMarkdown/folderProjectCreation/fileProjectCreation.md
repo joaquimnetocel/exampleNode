@@ -22,7 +22,7 @@
 
 * [NPM SCRIPTS](/folderSource/folderExamples/folderNpmScripts/README.md)
 
-* [_PRETTIER_](/folderMarkdown/folderProjectCreation/filePrettier.md))
+* [_PRETTIER_](/folderSource/folderExamples/folderPrettier/README.md)
 
 * CREATE [README.md](/README.md).
 
@@ -46,7 +46,7 @@
 
 * [PATH ALIAS](./filePathAlias.md)
 
-* [_ESBUILD_](./fileEsbuild.md)
+* [_ESBUILD_](/folderSource/folderExamples/folderEsbuild/README.md)
 
 * [_PRISMA_](./filePrisma.md)
 

@@ -2,7 +2,7 @@
 
 ## DESCRIPTION
 
-EXAMPLE OF HOW TO CREATE NPM SCRIPTS.
+EXAMPLE OF HOW TO CREATE _NPM_ SCRIPTS.
 
 ## CONFIGURATIONS
 
@@ -12,7 +12,7 @@ CREATE `npm run hello` COMMAND BY ADDING THE FOLLOWING LINE TO THE _script_ ENTR
 "hello": "node ./folderSource/folderExamples/folderNpmScripts/exampleNpmScripts.js",
 ```
 
-## RUNNING THE EXAMPLE
+## EXAMPLE
 
 ```bash
 npm run hello

@@ -4,7 +4,7 @@
 
 EXAMPLE OF [_NODE.JS_](https://nodejs.org) USING:
 
-* [NODEMON](https://nodemon.io): A MONITOR THAT WATCHES FOR FILE CHANGES AND AUTOMATICALLY RESTARTS THE NODE APLICATTION.
+* [_NODEMON_](https://nodemon.io): A MONITOR THAT WATCHES FOR FILE CHANGES AND AUTOMATICALLY RESTARTS THE NODE APLICATTION.
 
 ## REQUIRED PACKAGES
 
@@ -16,7 +16,7 @@ npm install -D nodemon
 
 * CREATE FILE _nodemon.json_.
 
-## RUNNING THE EXAMPLE
+## EXAMPLE
 
 ```bash
 npx nodemon ./folderSource/folderExamples/folderNodemon/exampleNodemon.js

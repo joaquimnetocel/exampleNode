@@ -4,24 +4,24 @@
 
 EXAMPLE OF [_NODE.JS_](https://nodejs.org) USING:
 
-* [DOTENV](https://www.npmjs.com/package/dotenv): A PACKAGE TO DEFINE ENVIRONMENT VARIABLES.
+* [_DOTENV_](https://www.npmjs.com/package/dotenv): A PACKAGE TO DEFINE ENVIRONMENT VARIABLES.
 
-## RECOMMENDED VSCODE EXTENSION
+## RECOMMENDED VSCODE EXTENSIONS
 
 INSTALL THE [_DOTENV_ _VSCODE_ EXTENSION](https://marketplace.visualstudio.com/items?itemName=mikestead.dotenv).
 
-## REQUIRED PACKAGE
+## REQUIRED PACKAGES
 
 ```bash
 npm install dotenv
 ```
 
-## CONFIGURATION
+## CONFIGURATIONS
 
-* CREATE [_.env_](../../.env) FILE. THIS FILE WILL CONTAIN ENVIRONMENTAL VARIABLES AVAILABLE THROUGH `process.env.variablename`.
-* ADD _.env_ AS A NEW LINE IN [_.gitignore_](../../.gitignore) (GOOD PRACTICE).
+* CREATE [_.env_](/.env) FILE. THIS FILE WILL CONTAIN ENVIRONMENTAL VARIABLES AVAILABLE THROUGH `process.env.variablename`.
+* IF YOU ARE USING GIT, ADD _.env_ AS A NEW LINE IN [_.gitignore_](/.gitignore) (GOOD PRACTICE).
 
-## RUNNING THE EXAMPLE
+## EXAMPLE
 
 ```bash
 npx nodemon ./folderSource/folderExamples/folderDotenv/exampleDotenv.js

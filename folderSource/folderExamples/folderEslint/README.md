@@ -2,7 +2,7 @@
 
 ## DESCRIPTION
 
-INSTRUCTIONS TO CONFIGURE:
+EXAMPLE AND INSTRUCTIONS TO CONFIGURE:
 
 * [ESLINT](https://eslint.org): A CODE ANALYSIS TOOL.
 
@@ -10,13 +10,13 @@ INSTRUCTIONS TO CONFIGURE:
 
 INSTALL THE [_ESLINT_ _VSCODE_ EXTENSION](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint).
 
-## REQUIRED PACKAGE
+## REQUIRED PACKAGES
 
 ```bash
 npm install -D eslint
 ```
 
-## CONFIGURATION
+## CONFIGURATIONS
 
 ```bash
 npm init @eslint/config # THIS IS GOING TO CREATE .eslintrc.json
@@ -60,3 +60,7 @@ npm init @eslint/config # THIS IS GOING TO CREATE .eslintrc.json
   ```json
   "quotes": ["error", "double", { "allowTemplateLiterals": true }],
   ```
+
+## EXAMPLE
+
+TRY TO MODIFY THE CODE IN _exampleEslint.js_ TO SEE ESLINT WORKING.

@@ -4,19 +4,14 @@
 
 EXAMPLES OF [_NODE.JS_](https://nodejs.org) USING:
 
-* [NODEMON](https://nodemon.io): A MONITOR THAT WATCHES FOR FILE CHANGES AND AUTOMATICALLY RESTARTS THE _NODE.JS_ APLICATTION.
 * [EXPRESS.JS](https://expressjs.com): A WEB APPLICATION FRAMEWORK FOR _NODE.JS_.
+
+## PREREQUISITES
+
+* **_NODEMON_**: FOLLOW THE INSTRUCTIONS [HERE](/folderSource/folderExamples/folderNodemon/README.md).
 
 ## REQUIRED PACKAGES
   
-* FOR NODEMON:
-
-```bash
-npm install -D nodemon
-```
-
-* FOR EXPRESS:
-
 ```bash
 npm install express
 npm install -D @types/express # ONLY IF WORKING WITH TYPESCRIPT
@@ -33,7 +28,7 @@ npx nodemon ./folderSource/folderExamples/folderExpress/exampleExpress.js
 ## EXAMPLE (URL PARAMETERS)
 
 ```bash
-node ./folderSource/folderExamples/folderExpress/exampleUrlParameters.js
+npx nodemon ./folderSource/folderExamples/folderExpress/exampleUrlParameters.js
 ```
 
 ## EXAMPLE (POST, PUT, DELETE AND JSON BODY PARSER)

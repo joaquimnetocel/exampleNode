@@ -4,7 +4,7 @@ import { createServer } from "http";
 /////
 
 // MODULES
-import { modulePrisma } from "#pathModules/modulePrisma.js";
+import { modulePrisma } from "./modulePrisma.js";
 /////
 
 // EXPRESS

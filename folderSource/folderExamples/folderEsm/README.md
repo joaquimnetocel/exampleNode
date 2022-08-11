@@ -4,7 +4,11 @@
 
 EXAMPLE OF [_NODE.JS_](https://nodejs.org) USING ECMAScript MODULES (ESM).
 
-## CONFIGURATION
+## PREREQUISITES
+
+* **_NODEMON_**: FOLLOW THE INSTRUCTIONS [HERE](/folderSource/folderExamples/folderNodemon/README.md).
+
+## CONFIGURATIONS
 
 LET'S MAKE _NODE.JS_ UNDERSTAND _.js_ FILES AS _ECMAScript MODULES_ BY ADDING THE FOLLOWING LINE TO [_package.json_](/package.json):
 
@@ -15,5 +19,5 @@ LET'S MAKE _NODE.JS_ UNDERSTAND _.js_ FILES AS _ECMAScript MODULES_ BY ADDING TH
 ## EXAMPLE
 
 ```bash
-node ./folderSource/folderExamples/folderEsm/exampleEsm.js
+npx nodemon ./folderSource/folderExamples/folderEsm/exampleEsm.js
 ```

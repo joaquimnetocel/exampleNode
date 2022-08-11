@@ -2,11 +2,11 @@
 
 ## DESCRIPTION
 
-INSTRUCTIONS TO CONFIGURE:
+EXAMPLE AND INSTRUCTIONS TO CONFIGURE:
 
 * [PRETTIER](https://prettier.io): A CODE FORMATTER TOOL.
 
-## REQUIRED VSCODE EXTENSION
+## REQUIRED VSCODE EXTENSIONS
 
 INSTALL THE [_PRETTIER_ _VSCODE_ EXTENSION](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode).
 
@@ -32,3 +32,7 @@ INSTALL THE [_PRETTIER_ _VSCODE_ EXTENSION](https://marketplace.visualstudio.com
 *.md
 *.yml
 ```
+
+## EXAMPLE
+
+TRY TO FORMAT THE CODE IN _examplePrettier.js_ WITH PRETTIER.

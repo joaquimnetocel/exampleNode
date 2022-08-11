@@ -1,11 +1,15 @@
-# _EJS_ TEMPLATING LANGUAGE
+# _EJS_
 
 ## DESCRIPTION
 
 EXAMPLE OF [_NODE.JS_](https://nodejs.org) USING:
 
-* [EXPRESS.JS](https://expressjs.com): A WEB APPLICATION FRAMEWORK FOR _NODE.JS_.
-* [EJS](https://ejs.co): A TEMPLATING LANGUAGE.
+* [_EJS_](https://ejs.co): A TEMPLATING LANGUAGE.
+
+## PREREQUISITES
+
+* **_NODEMON_**: FOLLOW THE INSTRUCTIONS [HERE](/folderSource/folderExamples/folderNodemon/README.md).
+* **_EXPRESS.JS_**: FOLLOW THE INSTRUCTIONS [HERE](/folderSource/folderExamples/folderExpress/README.md).
 
 ## REQUIRED PACKAGES
   
@@ -17,5 +21,5 @@ npm install ejs
 ## EXAMPLE
 
 ```bash
-node ./folderSource/folderExamples/folderEjs/exampleEjs.js
+npx nodemon ./folderSource/folderExamples/folderEjs/exampleEjs.js
 ```
