@@ -18,12 +18,12 @@
 
 ## EXAMPLE / CONFIGURATION
 
-* CREATE FOLDER _folderGraphqlCodegen_ IN _folderExamples_.
+* CREATE FOLDER _folderGraphqlCodegen_ IN _folderTopics_.
 * CREATE ALL FILES IN _folderGraphqlCodegen_. SPECIFICALLY _codegen.yml_ (IT IS POSSIBLE TO USE `npx graphql-codegen init`, BUT IT WAS CREATED MANUALLY).
 * INSERT THE FOLLOWING LINE TO THE _script_ PROPERTY IN _package.json_:
 
   ```json
-  "codegen": "graphql-codegen --config ./folderSource/folderExamples/folderGraphqlCodegen/folderApplication/folderCodegenConfigurations/codegen.yml",
+  "codegen": "graphql-codegen --config ./folderSource/folderTopics/folderGraphqlCodegen/folderApplication/folderCodegenConfigurations/codegen.yml",
   ```
 
 * `npm run codegen`

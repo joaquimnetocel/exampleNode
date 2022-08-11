@@ -10,8 +10,8 @@ UNDER CONSTRUCTION
 
   ```json
   "imports":{
-      "#pathJavascriptExamples/*": "./folderSource/folderExamples/*",
-      "#pathTypescriptExamples/*": "./folderDist/folderExamples/*",
+      "#pathJavascriptExamples/*": "./folderSource/folderTopics/*",
+      "#pathTypescriptExamples/*": "./folderDist/folderTopics/*",
       "#pathModules/*": "./folderDist/folderModules/*"
   },
   ```
@@ -20,30 +20,30 @@ UNDER CONSTRUCTION
 
   ```json
   "paths": {
-      "#pathJavascriptExamples/*": ["./folderSource/folderExamples/*"],
-      "#pathTypescriptExamples/*": ["./folderDist/folderExamples/*", "./folderSource/folderExamples/*"],
+      "#pathJavascriptExamples/*": ["./folderSource/folderTopics/*"],
+      "#pathTypescriptExamples/*": ["./folderDist/folderTopics/*", "./folderSource/folderTopics/*"],
       "#pathModules/*": ["./folderDist/folderModules/*", "./folderSource/folderModules/*"]
   },
   ```
 
 ## EXAMPLE (PATH ALIAS WITH _JAVASCRIPT_)
 
-* CREATE [_functionSum.js_](../../folderSource/folderExamples/functionSum.js) IN _folderExamples_.
-* CREATE [_examplePathAlias.js_](../../folderSource/folderExamples/examplePathAlias.js) IN _folderExamples_.
+* CREATE [_functionSum.js_](../../folderSource/folderTopics/functionSum.js) IN _folderTopics_.
+* CREATE [_examplePathAlias.js_](../../folderSource/folderTopics/examplePathAlias.js) IN _folderTopics_.
 * RUN THE EXAMPLE:
   
   ```bash
-  npx nodemon ./folderSource/folderExamples/examplePathAlias.js
+  npx nodemon ./folderSource/folderTopics/examplePathAlias.js
   ```
 
 ## EXAMPLE (PATH ALIAS WITH _TYPESCRIPT_)
 
-* CREATE [_functionSubtraction.ts_](../../folderSource/folderExamples/functionSubtraction.ts) IN _folderExamples_.
-* CREATE [_examplePathAlias.ts_](../../folderSource/folderExamples/examplePathAlias.ts) IN _folderExamples_.
+* CREATE [_functionSubtraction.ts_](../../folderSource/folderTopics/functionSubtraction.ts) IN _folderTopics_.
+* CREATE [_examplePathAlias.ts_](../../folderSource/folderTopics/examplePathAlias.ts) IN _folderTopics_.
 * RUN THE EXAMPLE
   
   ```bash
-  npm run tsc-nodemon --jsfile=./folderDist/folderExamples/examplePathAlias.js
+  npm run tsc-nodemon --jsfile=./folderDist/folderTopics/examplePathAlias.js
   ```
 
 [BACK](./fileProjectCreation.md)

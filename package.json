@@ -1,7 +1,7 @@
 {
 	"imports": {
-		"#pathJavascriptExamples/*": "./folderSource/folderExamples/*",
-		"#pathTypescriptExamples/*": "./folderDist/folderExamples/*",
+		"#pathJavascriptExamples/*": "./folderSource/folderTopics/*",
+		"#pathTypescriptExamples/*": "./folderDist/folderTopics/*",
 		"#pathModules/*": "./folderDist/folderModules/*"
 	},
 	"type": "module",
@@ -10,14 +10,14 @@
 	"description": "EXAMPLE OF NODE PROJECT",
 	"main": "./folderDist/index.js",
 	"scripts": {
-		"hello": "node ./folderSource/folderExamples/folderNpmScripts/exampleNpmScripts.js",
+		"hello": "node ./folderSource/folderTopics/folderNpmScripts/exampleNpmScripts.js",
 		"tsc-nodemon": "nodemon --exec \"tsc --skipLibCheck && node %npm_config_jsfile%\"",
 		"esbuild-nodemon": "nodemon --exec \"etsc --config=esbuild.development.config.cjs && node %npm_config_jsfile%\"",
 		"database": "prisma db push --schema=./prisma/schema.prisma && prisma generate --schema=./prisma/schema.prisma",
 		"studio": "prisma studio --schema=./prisma/schema.prisma",
 		"tsc-dev": "cross-env dotenvDevelopmentMode=true npm run tsc-nodemon --jsfile=./folderDist/index.js\"",
 		"esbuild-dev": "cross-env dotenvDevelopmentMode=true npm run esbuild-nodemon --jsfile=./folderDist/index.js\"",
-		"codegen": "graphql-codegen --config ./folderSource/folderExamples/folderGraphqlCodegen/folderApplication/folderCodegenConfigurations/codegen.yml",
+		"codegen": "graphql-codegen --config ./folderSource/folderTopics/folderGraphqlCodegen/folderApplication/folderCodegenConfigurations/codegen.yml",
 		"test": "echo \"Error: no test specified\" && exit 1"
 	},
 	"keywords": [],

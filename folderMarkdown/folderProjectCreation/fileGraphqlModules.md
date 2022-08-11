@@ -26,10 +26,10 @@ GRAPHQL PLAYGROUND IS A GRAPHICAL, INTERACTIVE AND IN-BROWSER _GRAPHQL_ IDE.
 
 ## EXAMPLE (_GRAPHQL MODULES_ WITH _GRAPHQL PLAYGROUND_)
 
-* CREATE FOLDER _folderGraphqlModules_ IN _folderExamples_.
+* CREATE FOLDER _folderGraphqlModules_ IN _folderTopics_.
 * CREATE ALL FILES IN _folderGraphqlModules_.
 * RUN THE EXAMPLE:
   
   ```bash
-  npx nodemon ./folderSource/folderExamples/folderGraphqlModules/exampleGraphqlModules.js
+  npx nodemon ./folderSource/folderTopics/folderGraphqlModules/exampleGraphqlModules.js
   ```

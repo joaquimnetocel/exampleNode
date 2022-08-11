@@ -25,10 +25,10 @@ npm install altair-static
 
 ## EXAMPLE (_GRAPHQL_ WITH SUBSCRIPTIONS)
 
-* CREATE FOLDER _folderGraphqlSubscriptions_ IN _folderExamples_.
+* CREATE FOLDER _folderGraphqlSubscriptions_ IN _folderTopics_.
 * CREATE ALL FILES IN _folderGraphqlSubscriptions_.
 * RUN THE EXAMPLE:
   
   ```bash
-  npm run esbuild-nodemon --jsfile=./folderDist/folderExamples/folderGraphqlSubscriptions/exampleGraphqlSubscriptions.js
+  npm run esbuild-nodemon --jsfile=./folderDist/folderTopics/folderGraphqlSubscriptions/exampleGraphqlSubscriptions.js
   ```
