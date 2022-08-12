@@ -8,19 +8,13 @@
 
 * ["HELLO WORLD"](/folderSource/folderTopics/folderHelloWorld/README.md)
 
-* INITIALIZE THE _NODE PACKAGE MANAGER_ (_NPM_):
-
-  ```bash
-  npm init -y # THIS IS GOING TO CREATE THE FILE package.json.
-  ```
-
 * [_NODEMON_](/folderSource/folderTopics/folderNodemon/README.md)
 
 * [NPM SCRIPTS](/folderSource/folderTopics/folderNpmScripts/README.md)
 
 * [_PRETTIER_](/folderSource/folderTopics/folderPrettier/README.md)
 
-* CREATE [README.md](/README.md).
+* CREATE [README.md](/README.md)
 
 * [_ESLINT_](./fileEslint.md)
 
