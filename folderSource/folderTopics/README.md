@@ -18,8 +18,6 @@
 
 * [_ESLINT_](/folderSource/folderTopics/folderEslint/README.md)
 
-* [_GIT_](./fileGit.md)
-
 * [TEMPLATE STRINGS](/folderSource/folderTopics/folderTemplateStrings/README.md)
 
 * [ECMAScript MODULES (ESM)](/folderSource/folderTopics/folderEsm/README.md)
@@ -38,7 +36,7 @@
 
 * [PATH ALIAS](/folderSource/folderTopics/folderPathAlias/README.md)
 
-* [_PRISMA_](./filePrisma.md)
+* [_PRISMA_](/folderSource/folderTopics/folderPrisma/README.md)
 
 * [_GRAPHQL_](/folderSource/folderTopics/folderGraphql/README.md)
 
