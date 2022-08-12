@@ -13,8 +13,8 @@ generates:
       - "typescript"
       - "typescript-resolvers"
     config:
-      # mappers:
-      #   typeUser: .prisma/client#tableUsers
+      mappers:
+        typeUser: .prisma/client#tableUsers
       #   typeContent: .prisma/client#tableContents
       #   typePage: .prisma/client#tablePages
       #   typeObject: .prisma/client#tableObjects

@@ -1,5 +1,6 @@
 /* eslint-disable */
 import { GraphQLResolveInfo } from 'graphql';
+import { tableUsers } from '.prisma/client';
 import { interfaceCodegenContext } from './interfaceCodegenContext';
 export type Maybe<T> = T | null;
 export type InputMaybe<T> = undefined | T;
@@ -21,6 +22,7 @@ export type Query = {
   queryHello: Scalars['String'];
   queryHelloGuys: Scalars['String'];
   queryHelloWithSubscription: Scalars['String'];
+  readUsers: Array<TypeUsers>;
 };
 
 
@@ -47,6 +49,14 @@ export type TypeMessageMessage = {
   __typename?: 'typeMessageMessage';
   Author?: Maybe<Scalars['String']>;
   Text?: Maybe<Scalars['String']>;
+};
+
+export type TypeUsers = {
+  __typename?: 'typeUsers';
+  fieldAge?: Maybe<Scalars['Int']>;
+  fieldEmail: Scalars['String'];
+  fieldName: Scalars['String'];
+  fieldUserId: Scalars['Int'];
 };
 
 
@@ -124,6 +134,7 @@ export type ResolversTypes = {
   String: ResolverTypeWrapper<Scalars['String']>;
   Subscription: ResolverTypeWrapper<{}>;
   typeMessageMessage: ResolverTypeWrapper<TypeMessageMessage>;
+  typeUsers: ResolverTypeWrapper<TypeUsers>;
 };
 
 /** Mapping between all available schema types and the resolvers parents */
@@ -134,12 +145,14 @@ export type ResolversParentTypes = {
   String: Scalars['String'];
   Subscription: {};
   typeMessageMessage: TypeMessageMessage;
+  typeUsers: TypeUsers;
 };
 
 export type QueryResolvers<ContextType = interfaceCodegenContext, ParentType extends ResolversParentTypes['Query'] = ResolversParentTypes['Query']> = {
   queryHello?: Resolver<ResolversTypes['String'], ParentType, ContextType, RequireFields<QueryQueryHelloArgs, 'argName'>>;
   queryHelloGuys?: Resolver<ResolversTypes['String'], ParentType, ContextType>;
   queryHelloWithSubscription?: Resolver<ResolversTypes['String'], ParentType, ContextType, RequireFields<QueryQueryHelloWithSubscriptionArgs, 'argChannelIdentifier'>>;
+  readUsers?: Resolver<Array<ResolversTypes['typeUsers']>, ParentType, ContextType>;
 };
 
 export type SubscriptionResolvers<ContextType = interfaceCodegenContext, ParentType extends ResolversParentTypes['Subscription'] = ResolversParentTypes['Subscription']> = {
@@ -152,9 +165,18 @@ export type TypeMessageMessageResolvers<ContextType = interfaceCodegenContext, P
   __isTypeOf?: IsTypeOfResolverFn<ParentType, ContextType>;
 };
 
+export type TypeUsersResolvers<ContextType = interfaceCodegenContext, ParentType extends ResolversParentTypes['typeUsers'] = ResolversParentTypes['typeUsers']> = {
+  fieldAge?: Resolver<Maybe<ResolversTypes['Int']>, ParentType, ContextType>;
+  fieldEmail?: Resolver<ResolversTypes['String'], ParentType, ContextType>;
+  fieldName?: Resolver<ResolversTypes['String'], ParentType, ContextType>;
+  fieldUserId?: Resolver<ResolversTypes['Int'], ParentType, ContextType>;
+  __isTypeOf?: IsTypeOfResolverFn<ParentType, ContextType>;
+};
+
 export type Resolvers<ContextType = interfaceCodegenContext> = {
   Query?: QueryResolvers<ContextType>;
   Subscription?: SubscriptionResolvers<ContextType>;
   typeMessageMessage?: TypeMessageMessageResolvers<ContextType>;
+  typeUsers?: TypeUsersResolvers<ContextType>;
 };
 
