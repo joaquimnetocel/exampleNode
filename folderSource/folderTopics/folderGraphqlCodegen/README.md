@@ -45,7 +45,7 @@ npm install altair-static
 * CREATE THE COMAND `npm run codegen` BY INSERTING THE FOLLOWING LINE TO THE _script_ PROPERTY IN _package.json_:
 
 ```json
-"codegen": "graphql-codegen --config ./folderSource/folderTopics/folderGraphqlCodegen/folderApplication/folderCodegenConfigurations/codegen.yml",
+"codegen": "graphql-codegen --watch --config ./folderSource/folderTopics/folderGraphqlCodegen/folderApplication/folderCodegenConfigurations/codegen.yml",
 ```
 
 ## EXAMPLE
