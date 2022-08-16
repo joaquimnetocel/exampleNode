@@ -23,10 +23,12 @@ UNDER CONSTRUCTION
 * ADD THE FOLLOWING PROPERTY IN _compilerOptions_ OF [_tsconfig.json_](../tsconfig.json) (ONLY IF WORKING WITH TYPESCRIPT):
 
   ```json
+  // ADDED BY ME
   "paths": {
       "#pathJavascriptExamples/*": ["./folderSource/folderTopics/*"],
       "#pathTypescriptExamples/*": ["./folderDist/folderTopics/*", "./folderSource/folderTopics/*"]
   },
+  /////
   ```
 
 ## EXAMPLE WITH _JAVASCRIPT_
