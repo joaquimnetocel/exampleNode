@@ -14,7 +14,7 @@ EXAMPLES AND INSTRUCTIONS TO CONFIGURE:
 
 ```bash
 npm install -D esbuild
-npm install -D esbuild-node-tsc
+npm install -D --save-exact esbuild-node-tsc@1.8.6 # RECENT VERSIONS WITH A BUG
 ```
 
 ## CONFIGURATION
