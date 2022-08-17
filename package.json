@@ -11,7 +11,7 @@
 	"scripts": {
 		"hello": "node ./folderSource/folderTopics/folderNpmScripts/exampleNpmScripts.js",
 		"tsc-nodemon": "nodemon --exec \"tsc --skipLibCheck && node %npm_config_jsfile%\"",
-		"esbuild-nodemon": "nodemon --exec \"esbuild-node-tsc --config=esbuild.development.config.cjs && node %npm_config_jsfile%\"",
+		"esbuild-nodemon": "nodemon --exec \"esbuild-node-tsc --config=esbuild.development.config.js && node %npm_config_jsfile%\"",
 		"database": "prisma db push --schema=./prisma/schema.prisma && prisma generate --schema=./prisma/schema.prisma",
 		"studio": "prisma studio --schema=./prisma/schema.prisma",
 		"codegen": "graphql-codegen --watch --config ./folderSource/folderTopics/folderGraphqlCodegen/folderApplication/folderCodegenConfigurations/codegen.yml",
@@ -35,11 +35,13 @@
 		"@types/ws": "^8.5.3",
 		"@typescript-eslint/eslint-plugin": "^5.30.7",
 		"@typescript-eslint/parser": "^5.30.7",
+		"cpy": "^9.0.1",
 		"esbuild": "^0.14.51",
 		"esbuild-node-tsc": "^2.0.2",
 		"eslint": "^8.20.0",
 		"nodemon": "^2.0.19",
 		"prisma": "^4.2.1",
+		"rimraf": "^3.0.2",
 		"typescript": "^4.7.4"
 	},
 	"dependencies": {
