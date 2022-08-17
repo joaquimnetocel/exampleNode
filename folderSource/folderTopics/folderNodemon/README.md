@@ -14,7 +14,7 @@ npm install -D nodemon
 
 ## CONFIGURATIONS
 
-* CREATE FILE _nodemon.json_.
+* CREATE FILE [_nodemon.json_](/nodemon.json).
 
 ## EXAMPLE
 
