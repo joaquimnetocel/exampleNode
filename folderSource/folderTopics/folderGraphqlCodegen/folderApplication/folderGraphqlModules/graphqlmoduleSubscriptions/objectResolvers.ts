@@ -1,14 +1,17 @@
 // MODULES
 import { modulePubsub } from "../../modulePubsub.js";
 import { stringChannelExample } from "../../modulePubsubChannels.js";
+import type { GraphqlmoduleSubscriptionsModule } from "./folderGeneratedCodegenTypes/fileGeneratedCodegenTypes";
+
 /////
 
-const objectResolvers = {
+const objectResolvers: GraphqlmoduleSubscriptionsModule.Resolvers = {
 	Subscription: {
 		subscribeMessage: {
-			// eslint-disable-next-line @typescript-eslint/no-explicit-any
-			subscribe: (argParent: any, argArgument: any) => {
-				return modulePubsub.asyncIterator(`${stringChannelExample}-${argArgument.argChannelIdentifier}`);
+			subscribe: (argParent, argArgument) => {
+				return {
+					[Symbol.asyncIterator]: () => modulePubsub.asyncIterator(`${stringChannelExample}-${argArgument.argChannelIdentifier}`),
+				};
 			},
 		},
 	},
