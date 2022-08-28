@@ -6,7 +6,7 @@
 
 * [_NODE_ AND _NODE PACKAGE MANAGER_ (_NPM_)](/folderSource/folderTopics/folderNodeAndNpm/README.md)
 
-* ["HELLO WORLD"](/folderSource/folderTopics/folderHelloWorld/README.md)
+* ["RUNNING JAVASCRIPT"](/folderSource/folderTopics/folderRunningJavascript/README.md)
 
 * [_NODEMON_](/folderSource/folderTopics/folderNodemon/README.md)
 
