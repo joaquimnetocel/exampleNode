@@ -1,5 +1,7 @@
 # TEMPLATE STRINGS
 
+TODO: TEMPLATE STRING
+
 ```javascript
 const stringColor = "RED";
 const numberNumberOfPages = 300;
