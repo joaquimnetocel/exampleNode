@@ -27,7 +27,7 @@ npm install -D rimraf
 * CREATE COMMAND `npm run esbuild-nodemon` BY ADDING THE FOLLOWING LINES TO THE _script_ ENTRY IN _package.json_:
 
   ```json
-  "esbuild-nodemon": "nodemon --exec \"etsc --config=esbuild.development.config.js && node %npm_config_jsfile%\"",
+  "esbuild-nodemon": "nodemon --exec \"esbuild-node-tsc --config=esbuild.development.config.js && node %npm_config_jsfile%\"",
   ```
 
 ## EXAMPLE WITH ESBUILD AND NODEMON ON DEVELOPMENT MODE

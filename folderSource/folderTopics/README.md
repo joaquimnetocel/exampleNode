@@ -34,6 +34,8 @@
 
 * [_TYPESCRIPT_](/folderSource/folderTopics/folderTypescript/README.md)
 
+* [_TSX_](./folderTsx/README.md)
+
 * [_ESBUILD_](/folderSource/folderTopics/folderEsbuild/README.md)
 
 * [PATH ALIAS](/folderSource/folderTopics/folderPathAlias/README.md)
