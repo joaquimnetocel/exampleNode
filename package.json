@@ -18,6 +18,7 @@
 		"crossenv-example": "cross-env dotenvDevelopmentMode=true node ./folderSource/folderTopics/folderCrossenv/exampleCrossenv.js\"",
 		"tsc-dev": "cross-env dotenvDevelopmentMode=true npm run tsc-nodemon --jsfile=./folderDist/index.js\"",
 		"esbuild-dev": "cross-env dotenvDevelopmentMode=true npm run esbuild-nodemon --jsfile=./folderDist/index.js\"",
+		"tsx-dev": "tsx watch ./folderSource/index.ts",
 		"test": "echo \"Error: no test specified\" && exit 1"
 	},
 	"keywords": [],

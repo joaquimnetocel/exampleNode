@@ -17,3 +17,12 @@ npm install -D tsx
 ```bash
 npx tsx watch ./folderSource/folderTopics/folderTsx/exampleTsx.ts
 ```
+
+## CONFIGURATION
+
+CREATE COMMAND `npm run tsx-dev` BY ADDING THE FOLLOWING LINES TO THE _script_ ENTRY IN _package.json_:
+
+  ```json
+  "tsx-dev": "tsx watch ./folderSource/index.ts",
+  ```
+  
