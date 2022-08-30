@@ -27,5 +27,5 @@ console.log(false || false); // SHOWS false
 IN ADDITION TO THESE 4 TRIVIAL CASES, IF AN OPERAND IS NOT A BOOLEAN, IT’S CONVERTED TO A BOOLEAN FOR THE EVALUATION. FOR INSTANCE, THE NUMBER `1` IS TREATED AS `true` AND THE NUMBER `0` AS `false`:
 
 ```javascript
-console.log(1||0); // WORKS JUST LIKE true || false AND RETURNS 1
+console.log(1 || 0); // WORKS JUST LIKE true || false AND RETURNS 1
 ```

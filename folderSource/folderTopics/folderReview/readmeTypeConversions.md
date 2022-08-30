@@ -79,7 +79,6 @@ BOOLEAN CONVERSION IS THE SIMPLEST ONE. IT HAPPENS IN LOGICAL OPERATIONS BUT CAN
 
 THE CONVERSION RULE: VALUES THAT ARE INTUITIVELY "EMPTY", LIKE `0`, AN EMPTY STRING, `null`, `undefined`, AND `NaN`, BECOME `false`. OTHER VALUES BECOME `true`. FOR INSTANCE:
 
-
 ```javascript
 console.log( Boolean(1) ); // SHOWS true
 console.log( Boolean(0) ); // SHOWS false
