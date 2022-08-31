@@ -23,6 +23,7 @@ const middlewareInitialHeaders = function (req: Request, res: Response, next: Ne
 		const objectInitialHeaders: RenderOptions["initialHeaders"] = {};
 		res.locals.objectInitialHeaders = objectInitialHeaders;
 		next();
+		return;
 	}
 	const objectInitialHeaders: RenderOptions["initialHeaders"] = {
 		initialHeaders: {
