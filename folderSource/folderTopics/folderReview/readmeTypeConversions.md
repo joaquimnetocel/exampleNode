@@ -4,7 +4,7 @@ MOST OF THE TIME, OPERATORS AND FUNCTIONS AUTOMATICALLY CONVERT THE VALUES GIVEN
 
 HOWEVER, THERE ARE ALSO CASES WHEN WE NEED TO EXPLICITLY CONVERT A VALUE TO THE EXPECTED TYPE.
 
-## THE TYPEOF OPERATOR
+## THE `typeof` OPERATOR
 
 BEFORE WE LEARN ABOUT TYPE CONVERSION, LET'S SEE AN OPERATOR THAT RETURNS THE TYPE OF A GIVEN DATA: THE `typeof` OPERATOR. IT'S USEFUL WHEN WE WANT TO PROCESS VALUES OF DIFFERENT TYPES DIFFERENTLY OR JUST WANT TO DO A QUICK CHECK. A CALL TO TYPEOF RETURNS A STRING WITH THE TYPE NAME:
 
@@ -33,7 +33,7 @@ String conversion is mostly obvious. A false becomes "false", null becomes "null
 NUMERIC CONVERSION HAPPENS IN MATHEMATICAL FUNCTIONS AND EXPRESSIONS AUTOMATICALLY. FOR EXAMPLE, WHEN DIVISION IS APPLIED TO NON-NUMBERS:
 
 ```javascript
-console.log( "6" / "2" ); // SHOWS 3, BECAUSE STRINGS ARE CONVERTED TO NUMBERS
+console.log("6" / "2"); // SHOWS 3, BECAUSE STRINGS ARE CONVERTED TO NUMBERS
 ```
 
 We can use the `Number` function to explicitly convert a value to a number:
@@ -65,10 +65,10 @@ VALUE | BECOMES...
 EXAMPLES:
 
 ```javascript
-console.log( Number("   123   ") ); // SHOWS 123
-console.log( Number("123z") ); // SHOWS NaN (error reading a number at "z")
-console.log( Number(true) ); // SHOWS 1
-console.log( Number(false) ); // SHOWS 0
+console.log(Number("   123   ")); // SHOWS 123
+console.log(Number("123z") ); // SHOWS NaN (error reading a number at "z")
+console.log(Number(true)); // SHOWS 1
+console.log(Number(false)); // SHOWS 0
 ```
 
 MOST MATHEMATICAL OPERATORS ALSO PERFORM SUCH CONVERSION, WE'LL SEE THAT IN THE NEXT CHAPTER.
@@ -80,15 +80,15 @@ BOOLEAN CONVERSION IS THE SIMPLEST ONE. IT HAPPENS IN LOGICAL OPERATIONS BUT CAN
 THE CONVERSION RULE: VALUES THAT ARE INTUITIVELY "EMPTY", LIKE `0`, AN EMPTY STRING, `null`, `undefined`, AND `NaN`, BECOME `false`. OTHER VALUES BECOME `true`. FOR INSTANCE:
 
 ```javascript
-console.log( Boolean(1) ); // SHOWS true
-console.log( Boolean(0) ); // SHOWS false
-console.log( Boolean("hello") ); // SHOWS true
-console.log( Boolean("") ); // SHOWS false
+console.log(Boolean(1)); // SHOWS true
+console.log(Boolean(0)); // SHOWS false
+console.log(Boolean("hello")); // SHOWS true
+console.log(Boolean("")); // SHOWS false
 ```
 
 PLEASE NOTE: THE STRING WITH ZERO "0" IS `true` SOME LANGUAGES (NAMELY PHP) TREAT "0" AS `false`. BUT IN JAVASCRIPT, A NON-EMPTY STRING IS ALWAYS `true`:
 
 ```javascript
-console.log( Boolean("0") ); // SHOWS true
-console.log( Boolean(" ") ); // SHOWS true
+console.log(Boolean("0")); // SHOWS true
+console.log(Boolean(" ")); // SHOWS true
 ```
