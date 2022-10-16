@@ -28,7 +28,7 @@
 
 * [_EXPRESS.JS_](/folderSource/folderTopics/folderExpress/README.md)
 
-* [_CORS_](/folderSource/folderTopics/folderCors/README.md)
+* [_CORS_](/folderSource/folderTopics/folderExpress/folderCors/README.md)
 
 * [_EJS_](/folderSource/folderTopics/folderEjs/README.md)
 
