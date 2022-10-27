@@ -15,6 +15,7 @@ EXAMPLE OF [_NODE.JS_](https://nodejs.org) USING:
 
 ```bash
 npm install cookie-parser
+npm i -D @types/cookie-parser # ONLY IF WORKING WITH TYPESCRIPT
 ```
 
 ## EXAMPLE
