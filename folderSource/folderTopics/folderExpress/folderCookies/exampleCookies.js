@@ -14,13 +14,13 @@ constExpress.use(cookieParser());
 
 // ROUTES
 constExpress.get("/", function (req, res) {
-	res.setHeader("aaaa", "bbb");
 	res.send("EXPRESS SERVER RUNNING!");
 });
 constExpress.get("/routeSetCookie", function (req, res) {
+	console.log("SET COOKIE");
 	const numberMiliseconds = 1000;
 	const numberSeconds = 60;
-	const numberMinutes = 1;
+	const numberMinutes = 60;
 	const numberHours = 1;
 	const numberDays = 1;
 	res.cookie(`cookieKey`, `MY COOKIE VALUE`, {
