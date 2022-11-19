@@ -1,5 +1,9 @@
 {
 	"compilerOptions": {
+		// ADDED BY ME: GENERATES TYPE DECLARATION FILES TO USE ON TRPC CLIENT.
+		"declaration": true,
+		"declarationDir": "./folderGeneratedDeclarationTypes",
+		/////
 		"paths": {
 			"#pathJavascriptExamples/*": ["./folderSource/folderTopics/*"],
 			"#pathTypescriptExamples/*": ["./folderDist/folderTopics/*", "./folderSource/folderTopics/*"]
