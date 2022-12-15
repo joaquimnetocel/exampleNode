@@ -12,7 +12,7 @@
 	"plugins": ["@typescript-eslint"],
 	"rules": {
 		"comma-dangle": [1, "always-multiline"],
-		"indent": ["error", "tab"],
+		"indent": ["error", "tab", { "SwitchCase": 1 }],
 		"linebreak-style": ["error", "windows"],
 		"quotes": ["error", "double", { "allowTemplateLiterals": true }],
 		"semi": ["error", "always"]

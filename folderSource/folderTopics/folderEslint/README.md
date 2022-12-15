@@ -61,6 +61,12 @@ npm init @eslint/config # THIS IS GOING TO CREATE .eslintrc.json
   "quotes": ["error", "double", { "allowTemplateLiterals": true }],
   ```
 
+* REPLACE THE _indent_ PROPERTY IN [_.eslintrc.json_](../.eslintrc.json) TO INDENT IN SWITCHS:
+
+  ```json
+  "indent": ["error", "tab", { "SwitchCase": 1 }],
+  ```
+
 ## EXAMPLE
 
 TRY TO MODIFY THE CODE IN _exampleEslint.js_ TO SEE ESLINT WORKING.
