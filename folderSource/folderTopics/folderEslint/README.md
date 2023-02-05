@@ -19,8 +19,7 @@ npm install -D eslint
 ## CONFIGURATIONS
 
 ```bash
-npm init @eslint/config # THIS IS GOING TO CREATE .eslintrc.json
-#npx eslint --init (alternative)
+npx eslint --init # THIS IS GOING TO CREATE .eslintrc.json
 ```
 
 * ANSWER THE FOLLOWING QUESTIONS:
