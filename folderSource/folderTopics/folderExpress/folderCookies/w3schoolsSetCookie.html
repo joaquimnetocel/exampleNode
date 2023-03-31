@@ -1,0 +1,8 @@
+<script>
+	async function functionGetData() {
+		const objectResult = await fetch("http://localhost:8081/routeSetCookie/", { credentials: "include" });
+		const objectResultAsJson = await objectResult.json();
+		alert(JSON.stringify(objectResultAsJson));
+	}
+	functionGetData();
+</script>
